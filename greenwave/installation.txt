@@ -1,0 +1,11 @@
+Installation
+
+The slideshow is based on the Galleriffic and Opacity Rollover plugins, which are 
+Copyright (c) 2009 Trent Foley (http://trentacular.com), 
+Licensed under the MIT License: http://www.opensource.org/licenses/mit-license.php
+
+To replace the images and the accompagnying text with your own, you must edit the 
+file: _sub_slideshow.tpl
+
+The images are placed in the images folder inside the template folder, but you
+can place them where ever you like, if you adjust _sub_slideshow.tpl accordingly.

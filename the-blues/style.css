@@ -1,0 +1,367 @@
+/* 
+Theme Name: The Blues
+Theme URI: pivotx.net
+Description: 'The Blues', a PivotX Theme
+Version: 1.0
+Date:	2009-03-27
+Author: Schop
+Author URI: johnschop.nl
+License: Creative Commons Attribution 2.5 Generic, http://creativecommons.org/licenses/by/2.5/ 
+Required PivotX version: PivotX 2.0
+Used Extensions: None
+*/ 
+
+/**
+ * Used colors:
+ * blue: #253c5e			(body background color)
+ * white: #fff				(text color)
+ * dark blue: #132440		(headers & navigation menu)
+ * light blue:#2a416a		(sidebar background color)
+ * greenish yellow: #c7f703	(links & stuff)
+ * Override styles for Thickbox, search button, Digg style paging and comments are included in this file
+ */
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #253c5e;
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-size: .8em;
+	color: #fff;
+}
+
+h1, h2, h3 {margin-top: 0;}
+
+h1 {font-size: 1.6em;font-weight: normal;}
+
+h2 {font-size: 1.6em;}
+
+h3 {font-size: 1em;}
+
+a {text-decoration: none;color: #c7f703;}
+
+a img {border: none;}
+
+img.left {float: left;margin: 0 20px 0 0;}
+
+img.right {float: right;margin: 0 0 0 20px;}
+
+/* Header */
+
+#logo {
+	width: 970px;
+	height: 88px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+#logo h1, #logo p {
+	float: left;
+	margin: 0;
+	color: #fff;
+}
+
+#logo h1 {
+	padding: 30px 0 0 0;
+	text-transform: lowercase;
+	font-weight: normal;
+	font-size: 3em;
+}
+
+#logo p {
+	text-transform: uppercase;
+	padding: 52px 0 0 8px;
+	font-size: 1em;
+	color: #c7f703;
+}
+
+#logo a {
+	border: none;
+	text-decoration: none;
+	color: #fff;
+}
+
+/* Menu */
+
+#menu {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 10px 0;
+	height: 30px;
+	background: #132440;
+	border-bottom: 2px solid #253c5e;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	margin: 0 3px 0 0;
+	padding: 6px 15px 10px 20px;
+	border-right: 1px #253c5e solid;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .8em;
+	color: #fff;
+}
+
+#menu a:hover {
+	margin: 0 3px 0 0;
+	color: #c7f703;
+}
+
+#menu .current_page_item a {
+	margin: 0 3px 0 0;
+	color: #fff;
+}
+
+/* Wrapper */
+
+#wrapper {
+}
+
+/* Page */
+
+#page {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* Content */
+
+#content {
+	float: right;
+	width: 550px;
+}
+
+.post {
+	padding-bottom: 15px;
+	line-height: 2em;
+}
+
+.post h1 {
+	font-weight: normal;
+}
+
+.title {
+	margin: 0;
+	padding: 10px 0 0 20px;
+	font-weight: normal;
+}
+
+.title a, .title a:link {
+	border-bottom: none;
+	color: #fff;
+}
+
+.title a:hover {
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.byline {
+	border-bottom: 2px solid #132440;
+	margin: 0px 20px 20px 20px;
+	font-size: .8em;
+}
+.byline a, .byline a:link, .entry a, .entry a:link {
+color: #c7f703;
+}
+
+.tag {
+	padding: 0 15px;
+}
+
+.entry {
+	padding: 0 20px;
+}
+
+.entry p {
+text-align: justify;
+margin-left: 0px;
+}
+
+.links {
+	clear: both;
+	padding: 4px 20px;
+	text-align: left;
+	font-weight: bold;
+	background: #132440;
+	font-size:.8em;
+	
+}
+
+.links a {
+	border: none;
+}
+
+.links a:hover {
+}
+
+/* Sidebars */
+
+#sidebar1 {
+	border-right: #253c5e solid 1px;
+}
+
+.sidebar {
+	float: left;
+	width: 220px;
+	padding: 0;
+	background: #2a416a;
+	border-bottom: 2px solid #132440;
+	font-size: .9em;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar li {
+	padding: 0 0 20px 0;
+}
+
+.sidebar li ul {
+}
+
+.sidebar li li {
+	margin: 0 20px 0 15px;
+	padding: 8px 0px;
+	border-bottom: 1px #29497C dashed;
+}
+
+
+.sidebar li h2 {
+	margin: 0 0 0 0;
+	padding: 10px 15px;
+	background: #132440;
+	font-size: 1em;
+	color: #c7f703;
+}
+
+.sidebar a, .sidebar a:link {
+	color: #fff;
+}
+
+.sidebar a:hover {
+	color: #c7f703;
+}
+
+/* Search, overriding pivotx_essentials.css */
+
+.pivot-search {
+	margin-top: 1em;
+	margin-left: 1em;
+}
+
+
+/* Digg style navigation, overriding pivotx_essentials.css */
+#pages {
+padding-left:30px;
+}
+
+#pages li a {
+	color: #c7f703;
+	background-color: #132440;
+}
+
+#pages li a:hover {
+	color: #c7f703;
+	border: 1px solid #c7f703;
+}
+
+#pages li.nolink {
+	color: #fff;
+	border: 1px solid #bbb;
+}
+
+#pages li.current {
+	color: #fff;
+	border: 1px solid #bbb;
+	background: transparent;
+}
+
+#pages li.skip {
+	color: #666;
+	border: 0px;
+	padding: 1px;
+}
+
+/* comment stuff, overriding pivotx_essentials.css */
+
+.comment-text {
+	background-color: #2a416a;
+	margin: 0;
+	border-bottom: 1px #29497C dashed;
+}
+
+.comment small {
+	color: #fff;
+}
+
+.commentform, 
+.commentform a:link {
+	color: #fff;
+}
+
+/* Tagcloud, overriding pivotx_essentials.css */
+#tagcloud {
+text-align: center;
+}
+
+/* Thickbox, overriding thickbox.css */
+#TB_window {
+  background: #253c5e;
+  color:#fff;
+  border: 4px solid #132440;
+}
+
+#TB_secondLine {color:#c7f703;}
+#TB_window a:link {color: #c7f703;}
+#TB_window a:visited {color: #c7f703;}
+#TB_window a:hover {color: #000;}
+#TB_window a:active {color: #c7f703;}
+#TB_window a:focus{color: #c7f703;}
+
+#TB_window img#TB_Image {
+  display:block;
+  margin: 15px 0 0 15px;
+  border-right: 1px solid #2a416a;
+  border-bottom: 1px solid #2a416a;
+  border-top: 1px solid #132440;
+  border-left: 1px solid #132440;
+}
+
+/* Footer */
+
+#footer {
+	width: 1000px;
+	height: 55px;
+	margin: 0 auto;
+	background: #2a416a;
+	border-top: 2px solid #132440;
+}
+
+#footer p {
+	margin: 0;
+	padding: 15px 0 0 0;
+	text-align: center;
+	font-size: .8em;
+	color: #fff;
+}
+
+#footer a {
+	color: #fff;
+}

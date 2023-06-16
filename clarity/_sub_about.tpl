@@ -1,0 +1,1 @@
+<p class="about">This is the Clarity Theme for PivotX. It was originally created by <a href="http://www.sixshootermedia.com/">Six Shooter Media</a>. This template is designed to be clean, easy on the eyes and above all, readable. This text can be changed in the <em>_sub_about.tpl</em> file in the template folder.</p>

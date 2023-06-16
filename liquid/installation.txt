@@ -1,0 +1,16 @@
+Installation.
+
+This ZIP-archive contains three folders.
+
+liquid - must be placed in the template-folder of your PivotX-installation.
+liquid-images - must be placed in the images-folder of your PivotX-installation.
+piecemaker - the original piecemaker files. These are only included for reference. You don't need to put them on your webserver.
+
+During installation you must edit the file piecemaker.xml. Here you must enter the name and location of your images and the accompanying text and links.
+
+For reference on how to do this, see the file in piecemaker/documentation.
+
+PLEASE NOTE: In the file piecemaker.xml the images and videos used must be listed with path and filename. 
+Images may be listed with an absolute url (e.g. http://www.example.com/images/liquid-images/img_01.jpg) OR with a path relative to your site root (e.g. /images/liquid-images/img_01.jpg).
+
+For a video the path must be given relative to the template folder. You can not use an absolute URL for a video.

@@ -1,0 +1,86 @@
+#output
+{
+ text-align: center;
+}
+
+#output img
+{
+ width: 500px;
+ height: 375px;
+ border: solid 5px #ffffff;
+}
+
+#nav
+{
+ margin: 1em 0 1em 0;
+ text-align: center;
+}
+
+#nav a.navStopAdvance
+{
+ display: inline;
+}
+
+#nav a.navPlayAdvance
+{
+ display: inline;
+}
+
+#nav a.active
+{
+ display: none;
+}
+
+#captions
+{
+ text-align: center;
+ margin: 0 0 1em 0;
+}
+
+#captions .line
+{
+ display: block;
+ margin: 1em 0 0 0;
+ font-weight: bold;
+ font-size: 1.25em;
+}
+
+#captions .line2
+{
+ display: block;
+ margin: 1em 0 0 0;
+}
+
+#captions .line3
+{
+ display: block;
+ margin: 2em 0 2em 0;
+ font-size: 0.75em;
+}
+
+#thumbnails
+{
+ width: 515px;
+ list-style: none;
+ margin: 0 auto;
+ padding: 0;
+}
+
+#thumbnails li
+{
+ margin: 0 0.5em 1em 0.5em;
+ float: left;
+}
+
+#thumbnails li img
+{
+ width: 100px;
+ height: 75px;
+ border: solid 5px #ffffff;
+ cursor: pointer;
+}
+
+#thumbnails li img.active
+{
+ border: solid 5px #77D0EF;
+}

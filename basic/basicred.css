@@ -1,0 +1,379 @@
+/* 
+Theme Name: back to basic
+Theme URI: www.rabbeltje.nl/?p=basic
+Description: low-graphic, low file-size back to basic theme
+Version: 1.1
+Date:   2009-04-01
+Author: Hanneke/Rabbeltje
+Author URI: www.rabbeltje.nl
+License: GPL 2.0 http://www.gnu.org/licenses/old-licenses/gpl-2.0.html 
+Required PivotX version: PivotX 2.0
+Used Extensions: fancybox, gallery
+*/
+
+body {
+    font-size: 12px;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+    background-color: #fff7f7;
+}
+
+p {
+    font-size: 12px;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    color: #000000;
+}
+
+a {
+	color: #bf3f00;
+	}
+
+a:visited {
+	color: #bf7f00;
+	}
+
+a:hover {
+	color: #bfbf00;
+	}
+
+h1 {
+    font-size: 32px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #bf0000;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #bf0000;
+}
+
+h1 a, h2 a {
+    /* Don't make headlines look too much like regular links, even 
+       though they're clickable */
+    text-decoration: none;
+	color: #bf0000;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #bf0000;
+}
+
+
+small { 
+    font-size: 11px;
+    color: #3f0000;
+}
+
+
+/* involving the header */
+
+#header {
+	background: #fff7f7 url(images/BG01.jpg) repeat-x top left;
+	height: 140px;
+	margin: 0;
+	padding-top: 15px;
+	padding-left: 35px;
+	}
+
+h1#title a {
+	color: #ff7f00;
+	font-size: 50px;
+	}
+
+h1#title a:hover {
+	color: #ff3f00;
+	}
+
+h2#subtitle {
+	color: #bf0000;
+	font-size: 25px;
+	margin-left: 25px;
+	}
+
+/* the menu with the pages on top */
+
+#menu {
+	height: 40px;
+	width: 100%;
+	background: #ffffff;
+	border-top: #7f0000 1px solid;
+	border-bottom: #7f0000 1px solid;
+	}
+
+#menu table {
+	height: 40px;
+	border-collapse: collapse;
+	}
+
+#menu td {
+	padding: 10px;
+	font-size: 20px;
+	text-align: center;
+	}
+
+#menu td a {
+	text-decoration: none;
+	}
+
+#menu td:hover {
+	background: #ffffff url(images/BG02.jpg) repeat-x top left;
+	}
+
+#menu td.active {
+	background: #ffffff url(images/BG02.jpg) repeat-x top left;
+	}
+
+/* your content-area */
+
+#weblog {
+	float: left;
+	width: 70%;
+	}
+
+.entry {
+	padding: 10px;
+	border-bottom: #7f0000 1px solid;
+	border-right: #7f0000 1px solid;
+	}
+
+p.date {
+	color: #7f0000;
+	font-style: italic;
+	}
+
+p.entryfooter {
+	clear: both;
+	text-align: right;
+	padding: 10px;
+	color: #3f0000;
+	}
+
+/* the sidebar */
+
+#sidebar {
+	float: left;
+	width: 29%;
+	}
+
+.s-entry  {
+	padding: 10px;
+	border-bottom: #7f0000 1px solid;
+	}
+
+#footer {
+	clear: both;
+	background-color: #fdfffd;
+	margin: 0;
+	padding: 10px;
+	border-top: 1px solid #7f0000;
+	text-align: center;
+	}
+
+blockquote {
+	border: 1px solid #bf0000;
+	background-color: #eeeeee;
+	padding: 10px;
+	font-style: italic;
+	color: #3f0000;
+	}
+
+.pivot-image {
+	max-width: 90%;
+	}
+
+/* Search forms */
+.searchbox, .result-searchbox, .commentinput, .piv_notify, .piv_discreet {
+	font: 10px Arial, Verdana, sans-serif;
+	border: 1px solid #7f0000;
+	padding: 4px 3px 3px 3px;
+	background: #ffffff;
+	}
+
+.searchbutton, .result-searchbutton, .commentbutton {
+	font: 10px Arial, Verdana, sans-serif;
+	border: 1px solid #7f0000;
+	background: #ffffff;
+	height: 21px;
+	}
+
+input.dim {
+	background-color: #ffffff;
+	color: #3f0000;
+	}
+
+/* Images and popups inserted by [[image]] and [[popup]] in pages and entries */
+
+.pivot-popupimage {
+	border: 3px solid #bf0000;
+	margin: 0;
+	}
+
+
+.pivot-wrapper a img {
+	border: 3px solid #bf0000;
+	margin: 0;
+	padding: 2px;
+	}
+
+.pivot-wrapper a:hover img {
+	border: 3px solid #7f0000;
+	margin: 0;
+	}
+
+.pivot-image {
+	border: 0px solid #bf0000;
+	margin: 0;
+	}
+
+.pivot-message {
+	border: 1px solid #bf0000;
+	margin: 12px 0px;
+	padding: 6px;
+	}
+	
+.align-left {
+	margin-right: 10px;
+}
+
+.align-right {
+	margin-left: 10px;
+}
+
+/* comment stuff */
+
+.comments {
+	border-top: 1px solid #7f0000;
+	text-align: center;
+	padding-top: 10px;
+	margin-top: 10px;
+	}
+
+.commentblock {
+	background: #ffffff;
+	color: #3f0000;
+	margin: 10px;
+	padding: 10px;
+	}
+
+.comment-text {
+	background-color: #ffffff;
+	margin: 0 0 0px 75px;
+	min-height:36px;
+	padding: 15px 15px 5px 15px;
+	}
+
+.comment small {
+	color: #3f0000;
+	font-size: 11px;
+}
+
+.commentform, .commentform a:link {
+	font-size: 11px;
+	color: #bf3f00;
+	}
+
+.commentinput {
+	width: 170px;
+	margin: 0 0 6px 0;
+}
+
+/* Example CSS code for Digg style navigation (provided by the
+paging extension. Original CSS code found at
+http://www.nowcss.com/navigation/create-digg-style-pagination. 
+Only used when using [[ paging action="digg" ]] in templates.
+*/
+
+#pages {
+	clear: both;
+	margin: 20px 0;
+	padding: 10px;
+	min-height: 24px;
+}
+
+#pages li a {
+	background-color: #fff7f7;
+	padding: 4px;
+	border: 1px solid #7f0000;
+	text-decoration: none;
+	float: left;
+	background-image: none;
+	line-height: 1.2em;
+}
+
+#pages li a:hover {
+	background: #ffffff;
+	border: 1px solid #bf0000;
+}
+
+#pages li.nolink {
+	color: #ff7f7f;
+	border: 1px solid #ff7f7f;
+	padding: 4px;
+}
+
+#pages li.current {
+	color: #FFF;
+	border: 1px solid #ff7f7f;
+	padding: 4px;
+	background: #bf0000;
+}
+
+#pages li.skip {
+	color: #7f0000;
+	border: 0px;
+	padding: 1px;
+}
+
+/* Styles for widgets 
+Only used when activated widgets in PivotX > Extensions */ 
+
+body .widget-lg {
+	background-color: #ffffff;
+	border: 1px solid #7f0000;
+	margin: 0 0 12px 0;
+}
+
+body .widget-lg div {
+	background: #fff7f7 url(images/widget_01.png) repeat-x top;
+	margin: 0;
+	padding: 6px;
+	}
+
+body .widget-lg a {
+	color: #bf3f00;
+	text-decoration: none;
+	background-image: none;
+}
+
+body .widget-lg a:hover {
+	color: #bfbf00;
+	text-decoration: underline;
+	background-image: none;
+}
+
+body .widget-lg .date {
+	font-size: 10px;
+	color: #3f0000;
+	background-image: none;
+	display: inline;
+}
+
+.gallery {
+	 margin: 0;
+	 padding: 0;
+	 }
+
+.gallery img {
+	 margin: 2px;
+	 padding: 0;
+	 } 
+
+
+a.fancybox img {
+	 border: 2px solid #bf0000;
+	 }

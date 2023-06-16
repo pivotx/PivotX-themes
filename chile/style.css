@@ -1,0 +1,409 @@
+/* 
+Theme Name: Chile
+Theme URI: http://binaryclouds.de/chile/?p=pivotx-template 
+Description: for content related to Chile
+Version: 1.0
+Date:	2012-02-15
+Author: Gerald Schnabel
+Author URI: ger@ldschnabel.de
+License: Creative Commons Attribution 2.5 Generic, http://creativecommons.org/licenses/by/2.5/ 
+Required PivotX version: PivotX 2.0
+Used Extensions: Gallery
+*/ 
+
+/**
+* Override styles for Thickbox, search button, Digg style paging and comments are included in this file
+*/
+body {
+    background:#E0E0E0;
+    font: 16px/1.95em "Lucida Grande","Lucida Sans Unicode",geneva,verdana,sans-serif;
+    color:#666;
+}
+
+#bodydiv {
+    background-image:url("images/map_chile.jpg");
+    background-repeat:no-repeat;
+    position:absolute; 
+    height:768px; 
+    width:1024px; 
+    margin:0px 0px 0px -512px;
+    top: 5px; 
+    left: 50%; background-color: #f5f5f5; 
+}
+
+* {
+    margin:0;
+    padding:0;
+    outline:none;
+}
+
+#footer {
+    padding:20px 50px;
+    margin-top:50px;
+    clear:both;
+    border-top:2px solid #eee;
+    font:80% Verdana;
+    line-height:25px;
+}
+
+#footer a {
+    color:#999;
+}
+
+#footer .foot_right {
+    float:right;
+}
+
+table {
+    width:100%;
+    padding:10px;
+    border:1px solid #eee;
+}
+
+th {
+    color:#6CCC26;
+    border-bottom:1px solid #eee;
+    padding:5px;
+}
+
+td {
+    padding:5px;
+    text-align:center;
+    background:#fafafa;
+}
+
+#container {
+    width:95%;
+    margin:0 auto;
+}
+
+#content ul {
+    margin:15px 0 15px 25px;
+}
+
+#content ul li {
+    border-bottom:0px solid #eee;
+    padding-left:10px;
+    color:#000;
+}
+
+#content img {
+    background:#fff;
+    padding:1px;
+    border:3px solid #eee;
+    margin:10px;
+}
+
+#sidebar ul {
+    list-style:none;
+    font:100% "Lucida Grande","Lucida Sans Unicode",geneva,verdana,sans-serif;
+}
+
+#sidebar ul a {
+    text-decoration:none;
+    color:#FFF;
+}
+
+#sidebar ul a span {
+    text-decoration:none;
+    color:#FFF;
+}
+
+#sidebar ul a:hover span {
+    text-decoration:none;
+    color:#333;
+}
+
+#sidebar p {
+    font:80% Verdana;
+    line-height:24px;
+    margin:10px 0 20px 0;
+    text-decoration:none;
+}
+
+#sidebar ul li {
+    margin:1px 0 0 0;
+    padding:0px;
+    line-height:1.5em;
+}
+
+#sidebar h3 {
+    font:120% Arial;
+    margin:5px 0;
+    color:#000;
+    white-space:nowrap;
+}
+
+#sidebar img.chupalla {
+    position:relative; 
+}
+
+#content {
+    width:70%;
+    float:left;
+    margin-bottom:40px;
+    padding: 5px;
+    height : 620px; 
+    overflow : auto;
+    background: #FF4040;
+    color: #471D1D;
+}
+
+#sidebar {
+    width:22%;
+    position:relative;
+    top:-120px;
+    margin-left:79%;
+    text-align:right;
+    height:650px;
+}
+
+#sidebarcontent {
+    height:550px;
+    overflow: auto;
+}
+
+.articleinfo {
+    font:80% "Lucida Grande","Lucida Sans Unicode",geneva,verdana,sans-serif;
+    border:0px;
+    color:#251B50;
+    padding:10px 0;
+}
+
+.articleinfo a {
+    color:#251B50;
+}
+
+.articleinfo a:hover {
+    text-decoration:none;
+}
+
+#content h3 {
+    margin:20px 0;
+}
+
+blockquote {
+    background:#f6f6f6;
+    padding:10px;
+    border:1px solid #eee;
+    font:100% Georgia, "Times New roman", serif;
+    line-height:1.5em;
+}
+
+#content p {
+    line-height:1em;
+    margin:10px 0;
+    text-align:justify;
+}
+
+#content p a, #content ul li a {
+    color:#222;
+    text-decoration:none;
+}
+
+#content p a:hover {
+    border-bottom:1px solid #aaa;
+}
+
+#content h2 {
+    font-size:190%;
+    font-family:"Lucida Grande","Lucida Sans Unicode",geneva,verdana,sans-serif;
+    margin-top:25px;
+}
+
+#content h2 a {
+    color:#333;
+    text-decoration:none;
+}
+
+#header {
+    width:1024px;
+    margin:0 auto;
+    padding:20px 0;
+}
+
+#header img.chile-star {
+    position:relative; 
+    top:10px; 
+    margin-right:15px;
+} 
+
+#header .right {
+    float:right;
+}
+
+#header h1 {
+    font-size:290%;
+    font-family:"Lucida Grande","Lucida Sans Unicode",geneva,verdana,sans-serif;
+    margin-bottom:5px;
+    margin-left:35px;
+}
+
+#header h1 a {
+    color:#000;
+    text-decoration:none;
+}
+
+#header h1 a span {
+    color:#ccc;
+}
+
+#header h1 a:hover span {
+    color:#A3E800;
+}
+
+#header h3 {
+    font-size:2em;
+    font-family:"Lucida Grande","Lucida Sans Unicode",geneva,verdana,sans-serif;
+    font-weight:normal;
+    color:#251B50;
+    display:inline;
+    margin-left:35px;
+    position:relative;
+    padding-left:85px;
+}
+
+p.about {
+    border-top:3px solid #6CCC26;
+    border-bottom:3px solid #6CCC26;
+    color:#fff;
+    background:#7EDB39;
+    padding:10px;
+}
+
+p.about a {
+    color:#fff;
+}
+
+/* Search forms */
+.searchbox {
+    font: .8em "Lucida Grande","Lucida Sans Unicode",geneva,verdana,sans-serif;
+    height: 16px;
+}
+/* Digg style navigation, overriding pivotx_essentials.css */
+#pages {
+    width: 90%;
+    text-align: center;
+    padding-left:30px;
+}
+
+#pages a {
+    color:#222;
+    background: transparent;
+    border:0px;
+}
+
+#pages a:hover {
+    color: #fff;
+    background: #FE0000;
+    border:0px;
+}
+
+#pages li a {
+    color:#222;
+    background: transparent;
+    border:0px;
+}
+
+#pages li a:hover {
+    color: #fff;
+    background: #FE0000;
+    border:0px;
+}
+
+#pages li.nolink {
+    border:0px;
+    color: #666666;
+}
+
+#pages li.current {
+    border:0px;
+    color: #666666;
+    background: transparent;
+}
+
+#pages li.skip {
+    border:0px;
+    color: #666;
+    padding: 1px;
+}
+
+/* comment stuff, overriding pivotx_essentials.css */
+.comment-text {
+    background-color: #FF4040;
+    margin: 0;
+    border-bottom: 1px #29497C dashed;
+    border:1px solid #eee;
+    font:100% Georgia, "Times New roman", serif;
+    line-height:1.5em;
+}
+
+.comment-text a {
+    color:#000;
+    text-decoration:none;
+    border-bottom:1px solid #ccc;
+}
+
+.comment-sidebar {
+    color:#CCCCCC;
+    border:0px;
+    background: transparent;
+    text-decoration:none;
+}
+
+a.comment-sidebar {
+    color:#FFF;
+    text-decoration:none;
+}
+
+.comment small {
+    color: #fff;
+}
+
+.commentform, 
+.commentform a:link {
+    color: #000;
+}
+
+/* Tagcloud, overriding pivotx_essentials.css */
+#tagcloud {text-align: center;}
+#tagcloud a:link {text-decoration:none; color: #CCC;}
+#tagcloud a:visited {color: #CCC;}
+#tagcloud a:hover {text-decoration:none; color: #CCC;}
+#tagcloud a:active {color: #CCC;}
+#tagcloud a:focus {color: #CCC;}
+
+/* Thickbox, overriding thickbox.css */
+#TB_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    background-color:#8EDF53;
+    height:100%;
+    width:100%;
+}
+
+#TB_window {
+    background: #fff;
+    color:#000;
+    border: 4px solid #6CCC26;
+}
+
+#TB_secondLine {color:#666666;}
+#TB_window a:link {color: #222;}
+#TB_window a:visited {color: #222;}
+#TB_window a:hover {text-decoration:underline; color: #222;}
+#TB_window a:active {color: #222;}
+#TB_window a:focus {color: #222;}
+
+#TB_window img#TB_Image {
+    display:block;
+    margin: 15px 0 0 15px;
+    border: 0px;
+}
+
+/* gallery */
+#gallery { margin: 0; padding: 0; }
+#gallery img { margin: 2px; padding: 0; }
+

@@ -1,0 +1,14 @@
+Installation
+
+This template uses jquery.ennui.contentslider.js to show selected entries on top of the pages.
+
+The slider will currently show the 10 most recent entries from the category linkdump. But you can change 
+this by editing line 6 in the file _sub_gallery.tpl in the template folder. The line looks like this:
+
+[[ subweblog category='linkdump' amount='10' ]][[ literal ]]
+
+Instead of linkdump you may write the name of another category. You may also change the number 10 to 
+show another number of entries in the slider.
+
+Only the top of each entry will be shown; but if the user clicks the title (s)he will be redirected to 
+the complete entry.

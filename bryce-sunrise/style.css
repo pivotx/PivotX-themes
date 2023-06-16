@@ -1,0 +1,326 @@
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #191E1A;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FCFFFD;
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+	color: #6E6C00;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+ul {
+}
+
+a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a:hover {
+	border-bottom: none;
+}
+
+a img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+img.right {
+	float: right;
+	margin: 0 0 0 20px;
+}
+
+/* Header */
+
+#header {
+	width: 100%;
+	height: 210px;
+}
+
+#logo {
+	width: 1000px;
+	height: 150px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+#logo h1, #logo p {
+	float: left;
+	margin: 0;
+	color: #FFFFFF;
+}
+
+#logo h1 {
+	padding: 80px 0 0 0;
+	text-transform: lowercase;
+	font-weight: normal;
+	font-size: 3em;
+}
+
+#logo p {
+	text-transform: uppercase;
+	padding: 102px 0 0 3px;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+#logo a {
+	border: none;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* Menu */
+
+#menu-bg {
+	background: #1E3227;
+	height: 45px;
+}
+
+#menu {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	margin: 0 3px 0 0;
+	padding: 12px 15px 10px 15px;
+	border: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #DDBB04;
+}
+
+#menu a:hover,
+#menu a.current {
+	margin: 0 3px 0 0;
+	background: #191E1A;
+	border-bottom: 3px solid #DDBB04;
+	color: #FFFFFF;
+}
+
+/* Wrapper */
+
+#wrapper {
+}
+
+/* Page */
+
+#page {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+#page-bg {
+	padding: 11px 24px;
+}
+
+/* Latest Post */
+
+#latest-post {
+	border: 1px dashed #8D8D8D;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 498px;
+	padding-right: 20px;
+}
+
+.post {
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+}
+
+.post h1 {
+	font-weight: normal;
+	font-size: 30px;
+}
+
+.post h2 {
+	font-size: 24px;
+}
+
+.title {
+	margin: 0;
+	padding: 15px 0px 0px 0px;
+	font-weight: normal;
+}
+
+.title a {
+	border-bottom: none;
+}
+
+.title a:hover {
+	color: #FBD900;
+}
+
+.byline {
+	margin: 0 0px 20px 0px;
+	text-transform: uppercase;
+}
+
+.entry {
+	padding: 0px 0px;
+}
+
+.links {
+	font-size: 11px;
+}
+
+.links a {
+	display: block;
+	border: none;
+	color: #FFFFFF;
+}
+
+.links a:hover {
+}
+
+.links .more {
+	float: right;
+	text-transform: uppercase;
+}
+
+.links .comments {
+	float: left;
+	padding-left: 20px;
+}
+
+.comment {
+	color: black;
+}
+
+.comment-text {
+	background: #aaa;
+}
+
+/* Sidebars */
+
+#sidebar1 {
+	padding-right: 20px;
+}
+
+.sidebar {
+	float: left;
+	width: 200px;
+	padding: 0 0 0 21px;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+list-style-type:square;
+list-style-position:inside;
+}
+
+.sidebar li {
+	padding: 0 0 0 15px;
+}
+
+
+.sidebar a {
+	color: #FBD900;
+}
+
+/* SIDEBAR WIDGETS
+====================================================== */
+.widget {
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+/* SEARCH
+====================================================== */
+form.pivot-search {
+	text-align: center;
+}
+form.pivot-search fieldset {
+	background: #FFF;
+}
+form.pivot-search legend,
+form.pivot-search label {
+	display: none;
+}
+#search.searchbox {
+	margin-bottom: 7px;
+	margin-left: 0px;
+}
+div.pivot-search-result {
+	padding-left: 250px;
+}
+.searchbutton { 
+	margin-bottom: 7px;  /* keeps button in line with search box in IE7 */
+	background: #DDD;
+	text-transform: uppercase;
+}
+
+
+/* Footer */
+
+#footer {
+	background-color: #0D170F;
+	height: 50px;
+}
+
+#footer-content {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+#footer p {
+	margin: 0;
+	padding: 20px 0 0 0;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #FBD900;
+}
+
+#footer a {
+	color: #FBD900;
+}

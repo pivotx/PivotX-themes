@@ -1,0 +1,3 @@
+<h3>[[t]]About[[/t]]</h3>
+
+<p>This is the "About" subweblog included in the initial <a class="mylinks" href="http://pivotx.net" title="PivotX: a GPL weblog tool.">PivotX</a> software. You can change this text by editing the file <em>'_sub_about.tpl'</em> in the <em>pivotx/templates/default/</em> folder. You can do this by directly editing the file, or you can go to 'Manage Media' &raquo; 'Templates' in the PivotX interface.</p>

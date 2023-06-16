@@ -1,0 +1,243 @@
+/*
+Design by Metamorphosis Design
+http://www.metamorphozis.com
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+*
+{
+margin: 0px;
+padding: 0px;
+}
+
+a{
+	color: #1b0059;
+	font-weight:bold;
+	text-decoration: none;
+}
+
+body {
+	background: url(images/bg_all.jpg);
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+
+h1 {
+	
+	color: #1b0059;
+	
+}
+
+#content{
+	margin: 0 auto;
+	width: 1000px;
+	text-align: left;
+	background: #4211b2 url(images/conbg.jpg) repeat-x center;
+	border-left: 15px solid #ffffff;
+	border-right: 15px solid #ffffff;
+}
+
+#main{
+	width: 1000px;
+	margin: 0 auto;
+	clear:both;
+	
+}
+
+#header {
+	width: 739px;
+	height: 172px;
+	background: url(images/header.jpg) no-repeat top;		
+}
+
+#logo {
+	height: 100px;
+	text-align: center;
+	width: 739px;
+	padding-top: 13px;
+}
+
+
+#logo a {
+	text-decoration: none;
+	text-transform: lowercase;
+	font-style: italic;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+#logo H2{
+	font-size: 12px;
+}
+
+#logo H1 a{
+	color: #1b0059;
+	font-size: 36px;
+}
+
+#left{
+	width: 261px;
+}
+
+#left H3{
+	font-family: Tahoma, Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	font-weight: normal;
+	text-align:center;
+	color: #ffffff;
+	padding-top:10px;
+}
+
+#left .sidebar {
+	text-align:left;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	background: url(images/leftulbg.png) repeat-x top;
+}
+
+#left ul{
+	list-style: none;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-bottom:10px;
+}
+
+#left li{
+	background: url(images/ls.png) no-repeat left top;
+	padding-left: 25px;
+	margin-bottom:10px;
+}
+
+#left a{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color: #000000;
+	font-weight:normal;
+}
+
+#right{
+	float: right;
+	width: 739px;
+	background: #dccefa url(images/rightbg.jpg) repeat-x center;
+	padding-bottom:20px;
+}
+
+#right #menu{
+	width:739px;
+	height: 58px;
+	background: url(images/menubg.jpg) no-repeat;
+}
+
+#right #menu ul {
+	padding-left: 0px;
+	margin: 0px;
+	list-style:none;
+	display: inline;
+}
+
+#right #menu li {
+	display: inline;
+	list-style: none;
+	padding-left:0px;
+}
+
+#right #menu a {
+	float: left;
+	width: 146px;
+	height: 38px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #610517;
+	font-weight: bold;
+	padding-top: 20px;
+	font-size: 14px;	
+}
+
+#right #menu a:hover{
+	width: 146px;
+	height: 38px;
+	background: url(images/menuhover.png) no-repeat center;
+	color: #ffffff;
+}
+
+#textblog{
+	padding: 8px;
+}
+
+#right h2 a {
+	color: #1b0059;
+}
+
+#right .entry {
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+
+#right .read {
+	padding-left: 10px;
+}
+
+#right .read p{
+	margin-bottom: 10px;
+}
+
+#right .date {
+	margin-top: 2px;
+	padding-top:5px;
+	border-top: solid 2px;
+}
+
+#right .readmore {
+	margin-top: 15px;
+}
+
+.read img {
+ padding:5px;
+  border:1px solid #555;
+ background:#4F30FF;
+}
+
+#leftcol{
+	width: 195px;
+	float:left;
+	margin-left: 10px;
+	text-align:left;
+}
+#cencol{
+	width: 195px;
+	float:left;
+	margin-left: 40px;
+	text-align:left;
+}
+#rightcol{
+	width: 195px;
+	float:left;
+	margin-left: 40px;
+	margin-right: 10px;
+	text-align:left;
+}
+
+#footer {
+	height: 40px;
+	width: 1000px;
+	clear: both;
+	padding-top: 15px;
+	background: url(images/footer.jpg) repeat-x top;
+}
+
+#footer p {
+	margin: 0;
+	font-size: 10px;
+	text-align: center;
+	color: #ffffff;
+}
+
+#footer a {
+	color: #ffffff;
+}

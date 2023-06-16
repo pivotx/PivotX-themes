@@ -1,0 +1,56 @@
+ [[ include file="`$templatedir`/_sub_header.tpl" ]]
+   <div id="conttop"><img src="[[template_dir]]images/spaser.gif" alt="" width="1" height="1" /></div>
+    <!-- content begins -->
+     <div id="content">
+       <div id="razd">
+         <div id="left">
+  <div id="content2">
+         <div id="entries2">
+         <div class="post">
+           <p class="entrynavigation">
+               [[previousentry text="&laquo; <a href='%link%'>%title%</a>" cutoff=20 ]] | 
+               <a href="[[webloghome]]">[[t]]Home[[/t]]</a> | 
+               [[nextentry text="<a href='%link%'>%title%</a> &raquo;" cutoff=20 ]]
+           </p>    
+           <h2 class="title"><a href="[[ link hrefonly=1 ]]">[[title]]</a></h2>
+           <h3>[[subtitle]]</h3>
+           <span class="date">
+               [[ date format="%dayname% %day% %monthname% %year% at %hour12%&#58;%minute% %ampm%." ]]
+               [[ tags ]]
+               [[ editlink format="Edit" prefix=" - " ]]
+           </span>
+           [[ introduction ]]
+           [[ body ]]
+           [[ if ($entry.allow_comments == 1) ]]
+           <p class="comments">[[ commcount ]]</p>
+           <div class="commentblock">
+               [[ comments ]]
+               <div class="comment" style="color:black;">
+                   %anchor%
+                   <img class="gravatar" src="%gravatar%" alt="%name%" />
+                   <div class="comment-text">
+                       %comment%
+                       <cite><strong>%name%</strong> %email% %url% - %date% %editlink%</cite>
+                   </div>
+               </div>
+               [[ /comments ]]        
+           </div>[[ /if ]]
+           <br />
+               [[message]]
+           <br />
+           [[ if ($entry.allow_comments == 1) ]]
+            [[commentform]]
+       [[ /if ]]
+         </div>
+         </div><!-- End of entries -->
+
+  <div style="clear:both"> &nbsp; </div>
+          </div>
+
+          </div>
+     [[ include file="`$templatedir`/_sub_sidebar.tpl" ]]
+    </div>
+   </div>
+   <!-- content ends -->
+   <div id="contbot"></div>
+   [[ include file="`$templatedir`/_sub_footer.tpl" ]]

@@ -1,0 +1,2 @@
+<p>
+This is the Magazine theme for PivotX. This theme is ready for the 'ExtraFields' extension, that will display a nice 150px wide picture in the post. The image will be automagically resized using <a href="http://www.darrenhoyt.com/2008/04/02/timthumb-php-script-released/" alt=''>TimThumb</a></p>

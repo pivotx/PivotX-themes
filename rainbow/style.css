@@ -1,0 +1,279 @@
+/*
+Design by Metamorphosis Design
+http://www.metamorphozis.com
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+a:link {
+ color: #3a7854;
+}
+
+a:hover{
+ text-decoration: underline;
+ color: #353535;
+}
+
+a:visited {
+ color: #3a7854;
+}
+
+*
+{
+border: 0;
+margin: 0;
+}
+
+body
+{
+
+ font: 12px Tahoma, Arial, Helvetica, sans-serif;
+ color: #000000;
+ background: url(images/tile.jpg) repeat-x fixed bottom;
+}
+
+#main1
+{
+width: 100%;
+background: url(images/sitebg.jpg) no-repeat bottom left fixed;
+padding-left: 50px;
+}
+
+#main
+{
+width: 770px;
+padding-bottom: 20px;
+}
+
+#logo{
+padding-left: 40px;
+text-align: left;
+height: 42px;
+padding-top: 7px;
+margin-bottom: 10px;
+}
+
+#logo a {
+ text-decoration: none;
+ font-style: italic;
+ color: #ffffff;
+ font-weight: bold;
+}
+
+
+#logo H2 a
+{
+font-size: 20px;
+}
+
+#buttons
+{
+width: 755px;
+height: 45px;
+background: url(images/menu.png) no-repeat top left;
+margin-bottom: 20px;
+padding-left: 20px;
+}
+
+#buttons ul {
+    padding-left: 10px;
+    margin: 0px;      
+}
+
+#buttons li {
+ display: inline;  
+}
+
+#buttons a {
+ display: block;
+ float: left;
+ width: 125px;
+ height: 35px;
+ text-align: center;
+ text-decoration: none;
+ color: #000000;
+ font-weight: bold;
+ font-size: 14px;
+ padding-top: 13px;
+ margin-right: 5px;
+}
+
+#buttons a:hover {
+ width: 125px;
+    height: 39px;
+ color: #ffffff;
+}
+
+#contop{
+ background:url(images/contop.png) no-repeat center;
+ height: 7px;
+}
+
+#conbot{
+ background:url(images/conbot.png) no-repeat center;
+ height: 7px;
+}
+
+#content
+{
+
+width: 770px;
+background:url(images/conbg.png) ;
+}
+
+#left
+{
+ float:left;
+width: 498px;
+margin-left: 7px;
+}
+
+#left H2
+{
+ height: 26px;
+ padding: 8px 0 0 40px;
+ background: url(images/title_left.png) no-repeat;
+ font-size: 18px;
+ color: #ffffff;
+}
+
+#left a {
+ color: #ddd;
+ text-decoration:none;
+}
+
+#left a:hover{
+ text-decoration: none;
+ color: #353535;
+}
+
+#left .article {
+ position:relative;
+ padding: 20px;
+}
+
+#left .article a {
+ color: #22d;
+ text-decoration:none;
+}
+
+#left p {
+ margin-bottom: 5px;
+}
+
+#left .date {
+ margin-bottom: 5px;
+}
+
+#left .more {
+ float:right;
+}
+
+#left .entrynavigation a {
+ color: #22d;
+ text-decoration:none;
+}
+
+#left .comment-text a {
+ color: #22d;
+ text-decoration:none;
+}
+
+#left li a {
+ color: #22d;
+ text-decoration:none;
+}
+
+#left img { padding:4px; border:1px solid #999; background:#379be8;}
+
+#right
+{
+float:left;
+width: 255px;
+margin-left: 5px;
+margin-right: 5px;
+}
+
+#right ul 
+{
+ list-style: none;
+ padding-top: 20px;
+ padding-left: 13px;
+ margin: 0px;
+ display:block;
+}
+
+#right ul li{
+ padding-bottom: 9px;
+ background: url(images/liststyle.png) no-repeat left top;
+ padding-left: 18px;
+ padding-right: 20px;
+}
+
+#right .sidebar_element{
+ margin-bottom: 10px;
+ margin-top: 4px;
+ padding-left: 15px;
+ padding-right: 15px;
+}
+
+
+#archives ul li {
+ margin-bottom: 1px;
+ background: url(images/liststyle.png) no-repeat left;
+ padding-left: 15px;
+ padding-top: 7px;
+}
+
+#right h2 {
+ height: 26px;
+ margin-left: 4px;
+ padding: 8px 0 0 40px;
+ background: url(images/title_right.png) no-repeat;
+ font-size: 18px;
+ color: #ffffff;
+}
+
+#right a:link {
+ text-decoration: none;
+}
+
+#right a:hover {
+ text-decoration: underline;
+}
+#right a:visited {
+  text-decoration: none;
+}
+
+#right li a {
+ padding-left: 10px;
+ background: url(images/img09.gif) no-repeat 1px 5px;
+}
+
+#footer
+{
+ font-size: 10px;
+ color: #000000;
+ padding-top: 4px;
+ text-align: center;
+ clear:both;
+ padding-bottom: 10px;
+}
+
+#mainbot{
+ background:url(images/mainbot.png) bottom left;
+ height: 71px;
+}
+
+#footer a
+{
+color: #000000;
+font-size: 10px;
+text-decoration: none;
+}
+.padding
+{
+padding: 10px;
+color:#fed600;
+font-weight: bold;
+}
+

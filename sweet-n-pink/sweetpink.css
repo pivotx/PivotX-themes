@@ -1,0 +1,569 @@
+/* 
+Theme Name: Sweet ' Pink
+Theme URI: pivotx.net
+Description: PivotX girlie theme
+Version: 1.0
+Date:	2009-09-182
+Author: Anke Willems
+Author URI: ankeland.nl
+License: GPL 2.0 http://www.gnu.org/licenses/old-licenses/gpl-2.0.html 
+Required PivotX version: PivotX 2.0.0
+Used Extensions: Extrafield, Gallery
+*/ 
+
+body {
+	background: #f09 url(img/bg_pinkdiag.gif) repeat top left;
+	color: #000;
+	margin:0;
+	padding: 0;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+	}
+
+
+/* clearfix */
+	
+	.clearfix:after {
+	    content: ".";
+	    display: block;
+	    height: 0;
+	    clear: both;
+	    visibility: hidden;
+	}
+	
+	/* Hides from IE-mac \*/
+	* html .clearfix {height: 1%;}
+	/* End hide from IE-mac */
+	
+	
+
+p {
+	font-family: arial, helvetica, sans-serif;
+	color: #000;
+	line-height: 1.4;
+	}
+
+
+a {
+	text-decoration: none;
+	color: #000;
+	}
+
+a img{
+	text-decoration: none;
+	background: none;
+	border: none;
+	}
+	
+p a,
+li a {
+	color: #000;
+	background: transparent url(img/bg_dottedline_pink.gif) repeat-x bottom left;
+
+	}
+
+h1,h2,h3,h4,h5 {
+	font-family: georgia, 'times new roman', serif;
+	font-style: italic;
+	}
+
+h1,
+h1 a {
+	font-size: 58px;
+	color: #fff;
+	margin:0;
+	}
+	
+	
+h2,
+h2 a {
+	font-size: 20px;
+	color: #fff;
+	margin: 15px 0 0 0;
+	}
+	
+#content h2,
+#content h2 a {
+	font-size: 20px;
+	color: #f09;
+	margin: 15px 0 0 0;
+	}	
+	
+h3,
+h3 a {
+	font-size: 18px;
+	color: #f06;
+	}
+	
+h4 {
+	font-size: 12px;
+	}		
+
+h2 a:hover,h3 a:hover,h4 a:hover {
+	text-decoration: underline;
+	}
+
+
+/*structure 
+***********/
+
+
+#container {
+	width: 800px;
+	background: transparent;
+	height: auto;
+	margin: 0 auto;
+	}	
+	
+#header {
+	width: 740px;
+	height: 125px;
+	background: transparent url(img/bg_header.png) no-repeat bottom right;
+		/*replace transparent png for gif in IE6 */
+		_background-image: url(img/bg_header.gif);
+	margin: 0 auto 20px auto;
+	padding: 10px 30px;
+	}	
+	
+#content {
+	width: 740px;
+	height: auto;
+	background: transparent url(img/bg_content.png) repeat-y bottom right;
+		/*replace transparent png for gif in IE6 */
+		_background-image: url(img/bg_content.gif);
+	margin: 0 auto;
+	padding: 30px;
+	position: relative;
+	}
+
+#content-bottom {
+	width: 800px;
+	height: 10px;
+	_height:9px;
+	background: transparent url(img/bg_content_bottom.png) no-repeat top right;
+		/*replace transparent png for gif in IE6 */
+		_background-image: url(img/bg_content_bottom.gif);
+	margin-bottom: 20px;
+	}	
+	
+	
+#content-main {
+	float: left;
+	width: 450px;
+	min-height: 600px;
+	 _height: 600px;
+	 padding-top:25px;
+	}	
+	
+#sidebar {
+	width: 230px;
+	float:right;
+	min-height: 600px;
+		_height: 600px;
+	border-left: 1px dotted #f09;
+	padding: 0 0 0 20px
+	}	
+	
+#footer {	
+	width:800px;
+	margin: 0 auto;
+	background: transparent url(img/bg_footer.png) no-repeat top right;
+		/*replace transparent png for gif in IE6 */
+		_background-image: url(img/bg_footer.gif);
+	height: 40px;
+	padding-top: 10px;
+	text-align: center;
+	color: #fff;
+	font-size: 10px;
+	}	
+
+	
+	
+	
+/* content
+************/
+
+.entry {
+	position: relative;
+	margin: 0px 0px 50px 0px;
+	width: 450px;
+	}
+	
+.entry h3 {
+	margin: 0px 0 30px 90px;
+	}	
+
+.entry h4 {
+	margin-bottom: 0px;
+	color: #f09;
+	}
+	
+.entry p {
+	margin: 0 0 15px 0 ;
+	}	
+
+img.entry-image {
+	margin: 10px 0;
+	
+	}
+		
+.date {
+	background: #fff url(img/datecloud.gif) no-repeat top left;
+	display: block;
+	width: 64px;
+	height: 39px;
+	color: #fff;
+	position: absolute;
+	top:-10px;
+	left:1px;
+	padding: 15px 0px 0px 20px;
+	font-size: 14px;
+	font-family: Georgia, 'times new roman', serif;
+	font-style: italic;
+	clear: left;
+	}		
+
+.entry .leesmeer {
+	display:block;
+	width: 100%;
+	height: 15px;
+	font-size: 14px;
+	letter-spacing: 1;
+	font-weight: bold;
+	font-family: georgia, 'times new roman', serif;
+	font-style:italic;
+	}
+
+.entry .leesmeer a {
+	color: #f06;
+	}
+
+.entry .meta,
+.entry .tags {
+	display:block;
+	width: 100%;
+	height: 15px;
+	font-size: 10px;
+	letter-spacing: 1;
+	font-weight: bold;
+	font-family: georgia, 'times new roman', serif;
+	font-style:italic;
+	text-align: right;
+	color: #f06;
+}
+
+.entry .meta {
+	border-bottom: 2px dotted #f69;	
+}
+
+
+.introtext p,
+.introtext ul,
+.introtext a {
+	font-weight: bold;
+	color: #903;
+	}
+	
+.meta a {
+	color: #f06;
+	}
+
+.meta span,
+.meta span a {
+	color: #903;
+	}
+
+.meta span a:hover {
+	color: #f06;
+	}
+		
+.entry .tags,
+.entry .tags a  {
+	height: 15px;
+	margin-top:0px;
+	color: #C192AA;
+	}
+		
+
+.tags a:hover {
+	text-decoration: underline;
+	}
+
+#tagpage h2 {
+	font-size: 18px;
+	}
+	 
+#tagpage h3 {
+	font-size: 10px;
+	}
+
+#tagpage ul,
+ul#search-results {
+	padding: 0 0 0 30px;
+	list-style-image: url(img/star.gif);
+	line-height: 1.4;
+	}
+
+.taglist li a,
+#search-results li a {
+	font-family: georgia, 'times new roman', serif;
+	font-style: italic;
+	color: #f09;
+	font-size:13px;
+	font-weight: bold;
+	}
+	
+fieldset {
+	border: 0px;
+	padding: 0;
+	margin:0;
+	}	
+
+.pivot-search-result legend {
+	padding: 0px;
+	font-size: 10px;
+	margin-top:10px;
+	}
+	
+	
+/* commentform
+***********/
+
+
+.comment-text {
+	margin-left: 0px;
+	background: #fff url(img/bg_comment-text.gif) no-repeat bottom right;
+	padding: 10px 20px 15px 10px ;
+	 }
+
+.comment-text .meta {
+	border: none;
+	color: #990033;
+	}
+	
+.comment-text .meta a {
+	background: transparent url(img/bg_dottedline_pink.gif) repeat-x bottom left;
+	}	
+
+.comment-text .name {
+	color: #f06;
+	}
+	
+p.commcount {
+	font-family: georgia, 'times new roman', serif;
+	color: #f09;
+	font-style:italic;
+	font-size: 14px;
+	font-weight: bold;
+	}	
+	
+
+/* sidebar 
+********/
+
+	
+	
+.sidebarblock {
+	width: 220px;
+	margin-bottom: 30px;
+	}
+
+.sidebarblock p{
+	padding: 0 10px;
+	}
+
+.sidebarblock h3 {
+	background: #fff url(img/bg_sidebar_header.gif) no-repeat top left;
+	color: #fff;
+	height: 25px;
+	font-size: 14px;
+	padding: 9px 0 0 20px;
+	margin-bottom: 10px;
+	
+	}
+	
+.sidebarblock ul {
+	padding: 0 0 0 30px;
+	list-style-image: url(img/star.gif);
+	line-height: 1.4;
+	margin:0px;
+	}	
+
+
+ul.lastcomments {
+	font-size: 11px;
+	}
+
+ul.lastcomments a {
+	font: bold italic 11px georgia, 'times new roman', serif;
+	color: #990033;
+	}
+
+ul.lastcomments a:hover {
+	color: #f06;
+	}
+		
+ul.lastcomments li {
+	margin-bottom: 10px;
+	}	
+
+#tagcloud {
+	padding: 0 0 0 10px;
+	color: #990033;
+	}
+
+#tagcloud a {
+	font: italic 10px;
+	color: #990033;
+	}
+
+#tagcloud a:hover {
+	color: #f06;
+	}
+	
+	
+input.searchbox,
+input.result-searchbox	 {
+	background: #fff;
+	color: #f06;
+	border: 1px dotted #f06;
+	width: 140px;
+	margin-left: 5px;
+	font-size:10px;
+	}
+
+input.searchbutton,
+input.result-searchbutton {
+	background: none;
+	border: none;
+	color: #903;
+	font-family: Georgia, 'times new roman', serif;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+	
+	}
+	
+#rssbutton {
+	position:absolute;
+	top:10px;
+	right: 15px;
+	}	
+
+/*paging
+**********/
+
+#pages ul,
+#pages li {
+	display:inline;
+	}
+
+#pages {
+	text-align: center;
+	width: 99%;
+	font-size: 10px;
+		}
+
+#pages li,
+#pages li.nolink {
+	float:none;
+	border: none;
+	}
+
+#pages li.nolink {
+	color: #C192AA;
+	}	
+
+#pages li.current {
+	background: #fff url(img/bg_pinkdiag.gif) repeat top left;
+	border: 1px solid #f09;
+	font-weight: bold;
+	}
+
+	
+#pages li a {
+	float:none;
+	border: 1px solid #fff;
+	background: none;
+	color: #903;
+	}
+
+#pages li a:hover {
+	border: 1px solid #f09;
+	}
+
+/* images and gallery 
+********/
+
+.pivotx-image {
+	max-width: 448px;
+	margin: 0 0 10px 0;
+	}
+
+
+/*footer 
+*********/
+		
+	
+#footer p {
+	color: #fff;
+	font-family: georgia, 'times new roman', serif;
+	margin-top: 0px;
+	padding-top:10px;
+	}	
+	
+#footer a {
+	color: #fff;
+	}	
+
+/* making it ready for the gallery extension
+********/
+
+div.gallery { 
+	margin: 0; 
+	padding: 0; 
+	}
+	
+div.gallery img { 
+	margin: 2px; 
+	padding: 0; 
+	}
+
+
+	
+/* adjust to older pivotx versions
+********/
+
+.pivotx-search label,
+.pivotx-search legend,
+.pivotx-search-result label,
+.pivotx-search-result legend {
+	display:none;
+	visibility:hidden;
+	}	
+	
+.pivot-search label,
+.pivot-search legend,
+.pivot-search-result label,
+.pivot-search-result legend {
+	display:none;
+	visibility:hidden;
+	}
+	
+.pivot-image, 
+.pivotx-image {
+	border:none;
+	}	
+	
+.taglinkext, a[rel="tag"] {
+	border-bottom:none;
+	}
+
+div.comment {
+	border-left:none;
+	background:none;
+	margin-left:0px;
+	padding:0;
+	margin:0 0 20px 0;
+	}
+	

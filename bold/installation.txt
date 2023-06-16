@@ -1,0 +1,30 @@
+Installation of theme Bold
+On top of the frontpage two featured entries are shown. These entries are selected with a 
+special bonus field. Therefore you must first go to the PivotX website and download the 
+extension Bonus Fields. Install and activate the extension. Then go to the admin interface:
+
+extensions -> configure extensions -> bonus fields.
+
+On the new page you must click the button ”Add bonusfield” and then you must fill it in like
+this:
+
+Name: slider
+Internal name: slider
+Type: checkbox
+Location: entry - before introduction
+Show if condition type: show if category (entry) or chapter (page)
+Extra type information: 1
+
+Save the changes.
+
+When you now enter or edit an entry in the admin interface, you will see a new checkbox
+just below the field for the subtitle. If you mark this checkbox, the entry will also be shown
+in the slider. Only the first two marked entries will be shown like this.
+
+Only the top of each entry will be shown; but if the user clicks the title (s)he will be
+redirected to the complete entry.
+
+-------
+
+This theme also makes use of the extra image field. If an entry has an image in this field, it 
+will be shown together with the entry.

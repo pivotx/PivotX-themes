@@ -1,0 +1,388 @@
+/* 
+Theme Name: Clarity
+Theme URI: pivotx.net
+Description: Focus on readability
+Version: 1.0
+Date:	2009-03-27
+Author: Schop
+Author URI: johnschop.nl
+License: Creative Commons Attribution 2.5 Generic, http://creativecommons.org/licenses/by/2.5/ 
+Required PivotX version: PivotX 2.0
+Used Extensions: Gallery
+*/ 
+
+/**
+* Override styles for Thickbox, search button, Digg style paging and comments are included in this file
+*/
+body {
+	background:#fff;
+	font: 16px/1.95em "Lucida Grande","Lucida Sans Unicode",geneva,verdana,sans-serif;
+	margin:0;
+	color:#666;
+	padding-top:20px;
+	border:3px solid #eee;
+}
+
+html {
+	border:15px solid #f6f6f6;
+	border-left:30px solid #f6f6f6;
+	border-right:30px solid #f6f6f6;
+}
+
+* {
+	margin:0;
+	padding:0;
+	outline:none;
+}
+
+#footer {
+	padding:20px 50px;
+	margin-top:50px;
+	clear:both;
+	border-top:2px solid #eee;
+	font:80% Verdana;
+	line-height:25px;
+}
+
+#footer a {
+	color:#999;
+}
+
+#footer .foot_right {
+	float:right;
+}
+
+table {
+	width:100%;
+	padding:10px;
+	border:1px solid #eee;
+}
+
+th {
+	color:#6CCC26;
+	border-bottom:1px solid #eee;
+	padding:5px;
+}
+
+td {
+	padding:5px;
+	text-align:center;
+	background:#fafafa;
+}
+
+#container {
+	width:95%;
+	margin:0 auto;
+}
+
+#content ul {
+	margin:15px 0 15px 25px;
+}
+
+#content ul li {
+	border-bottom:0px solid #eee;
+	padding-left:10px;
+	color:#444;
+}
+
+#content img {
+	background:#fff;
+	padding:1px;
+	border:3px solid #eee;
+	margin:10px;
+}
+
+#sidebar ul {
+	list-style:none;
+	font:80% "Lucida Grande","Lucida Sans Unicode",geneva,verdana,sans-serif;
+}
+
+#sidebar ul a {
+	color:#444;
+	text-decoration:none;
+}
+
+#sidebar ul a span {
+	color:#ccc;
+}
+
+#sidebar ul a:hover span {
+	color:#333;
+}
+
+#sidebar p {
+	font:80% Verdana;
+	line-height:24px;
+	margin:10px 0 20px 0;
+}
+
+#sidebar ul li {
+	background:#fafafa;
+	margin:1px 0 0 0;
+	padding:0px;
+	line-height:1.5em;
+}
+
+#sidebar h3 {
+	font:120% Arial;
+	margin:5px 0;
+	color:#222;
+}
+
+#content {
+	width:70%;
+	float:left;
+	margin-bottom:50px;
+}
+
+#sidebar {
+	margin-left:75%;
+	border-left:1px solid #eee;
+	padding-left:30px;
+}
+
+.articleinfo {
+	font:80% "Lucida Grande","Lucida Sans Unicode",geneva,verdana,sans-serif;
+	border-top:1px solid #eee;
+	color:#999;
+	padding:10px 0;
+}
+
+.articleinfo a {
+	color:#6CCC26;
+}
+
+.articleinfo a:hover {
+	text-decoration:none;
+}
+
+#content h3 {
+	margin:20px 0;
+}
+
+blockquote {
+	background:#f6f6f6;
+	padding:10px;
+	border:1px solid #eee;
+	font:100% Georgia, "Times New roman", serif;
+	line-height:1.5em;
+}
+
+#content p {
+	line-height:2em;
+	margin:10px 0;
+	word-spacing:2px;
+	text-align:justify;
+}
+
+#content p a, #content ul li a {
+	color:#222;
+	text-decoration:none;
+	border-bottom:1px solid #ccc;
+}
+
+#content p a:hover {
+	border-bottom:1px solid #aaa;
+}
+
+#content h2 {
+	font:190%;
+	font-family:"Lucida Grande","Lucida Sans Unicode",geneva,verdana,sans-serif;
+	margin-top:25px;
+}
+
+#content h2 a {
+	color:#333;
+	text-decoration:none;
+}
+
+#header {
+	width:100%;
+	margin:0 auto;
+	padding:20px 0;
+}
+
+#header .right {
+	float:right;
+}
+
+#header h1 {
+	font:290%;
+	font-family:"Lucida Grande","Lucida Sans Unicode",geneva,verdana,sans-serif;
+	margin-bottom:5px;
+	margin-left:35px;
+}
+
+#header h1 a {
+	color:#000;
+	text-decoration:none;
+}
+
+#header h1 a span {
+	color:#ccc;
+}
+
+#header h1 a:hover span {
+	color:#A3E800;
+}
+
+#header h3 {
+	font:2em;
+	font-family:"Lucida Grande","Lucida Sans Unicode",geneva,verdana,sans-serif;
+	font-weight:normal;
+	color:#999;
+	display:inline;
+	margin-left:35px;
+}
+
+ul#nav {
+	background:#7EDB39;
+	padding:10px;
+	font-size:80%;
+	border-top:3px solid #6CCC26;
+	border-bottom:3px solid #6CCC26;
+	font-weight:bold;
+	margin:20px 0 0 0;
+}
+
+ul#nav li {
+	display:inline;
+	list-style:none;
+	margin-right:10px;
+}
+
+ul#nav li a {
+	padding:10px 14px;
+	color:#fff;
+	text-decoration:none;
+}
+
+ul#nav li a:hover {
+	background:#8EDF53;
+	color:#fff;
+}
+
+ul#nav li a.active {
+	background:#fff;
+	color:#333;
+	border-right:2px solid #6CCC26;
+	border-bottom:2px solid #6CCC26;
+}
+
+p.about {
+	border-top:3px solid #6CCC26;
+	border-bottom:3px solid #6CCC26;
+	color:#fff;
+	background:#7EDB39;
+	padding:10px;
+}
+
+p.about a {
+	color:#fff;
+}
+
+/* Search forms */
+.searchbox {
+	font: .8em "Lucida Grande","Lucida Sans Unicode",geneva,verdana,sans-serif;
+	height: 16px;
+}
+/* Digg style navigation, overriding pivotx_essentials.css */
+#pages {
+padding-left:30px;
+}
+
+#pages li a {
+	color:#222;
+	background: transparent;
+	border: 1px solid #666666;
+	}
+
+#pages li a:hover {
+	color: #fff;
+	border: 1px solid #fff;
+	background: #666666;
+}
+
+#pages li.nolink {
+	color: #666666;
+	border: 1px solid #666666;
+}
+
+#pages li.current {
+	color: #666666;
+	border: 1px solid #666666;
+	background: transparent;
+}
+
+#pages li.skip {
+	color: #666;
+	border: 0px;
+	padding: 1px;
+}
+
+/* comment stuff, overriding pivotx_essentials.css */
+
+.comment-text {
+	background-color: #f6f6f6;
+	margin: 0;
+	border-bottom: 1px #29497C dashed;
+	border:1px solid #eee;
+	font:100% Georgia, "Times New roman", serif;
+	line-height:1.5em;
+}
+
+.comment-text a{
+	color:#222;
+	text-decoration:none;
+	border-bottom:1px solid #ccc;
+}
+
+.comment small {
+	color: #fff;
+}
+
+.commentform, 
+.commentform a:link {
+	color: #666666;
+}
+
+/* Tagcloud, overriding pivotx_essentials.css */
+#tagcloud {text-align: center;}
+#tagcloud a:link {color: #222;}
+#tagcloud a:visited {color: #222;}
+#tagcloud a:hover {text-decoration:underline; color: #222;}
+#tagcloud a:active {color: #222;}
+#tagcloud a:focus{color: #222;}
+
+/* Thickbox, overriding thickbox.css */
+#TB_overlay {
+  position: fixed;
+  z-index:100;
+  top: 0px;
+  left: 0px;
+  background-color:#8EDF53;
+  filter:alpha(opacity=50);
+  -moz-opacity: 0.50;
+  opacity: 0.50;
+  height:100%;
+  width:100%;
+}
+
+#TB_window {
+  background: #fff;
+  color:#666666;
+  border: 4px solid #6CCC26;
+}
+
+#TB_secondLine {color:#666666;}
+#TB_window a:link {color: #222;}
+#TB_window a:visited {color: #222;}
+#TB_window a:hover {text-decoration:underline; color: #222;}
+#TB_window a:active {color: #222;}
+#TB_window a:focus{color: #222;}
+
+#TB_window img#TB_Image {
+  display:block;
+  margin: 15px 0 0 15px;
+  border: 0px;
+}

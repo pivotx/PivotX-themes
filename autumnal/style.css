@@ -1,0 +1,203 @@
+/*Autumn Template by Brandon Booth : LucidGreen.net*/
+
+/*Styles reset*/
+* {
+margin:0;
+  padding:0;
+}
+
+html {
+  position:relative;
+}
+
+body {
+  font-family:Arial,Verdana,Tahoma,sans-serif;
+  position:relative;
+  background:url('images/bodyBackground.png') top repeat-x #363422;
+  color:#FFF6D8;
+}
+
+a,a:active,a:visited,a:link {
+  color:#BD6C05;
+}
+
+a:hover {
+  color:#FFC643;
+}
+
+/* Layout and color */
+
+#header {
+  height:342px;
+  margin:0 auto;
+  width:950px;
+  background:url('images/GraphicTrees.jpg') bottom center no-repeat;
+  position:relative;
+}
+
+#page {
+  margin:0 auto;
+  overflow:hidden;
+  padding-top:1.5em;
+  width:950px;
+}
+
+#footer {
+  margin:0 auto;
+  padding:1em 0;
+  text-align:center;
+  background-color:#000;
+}
+
+#navigation ul {
+  list-style:none;
+  position:absolute;
+  top:35px;
+  left:310px;
+}
+
+#navigation li {
+  display:inline;
+}
+
+#navigation a {
+  display:block;
+  float:left;
+  height:34px;
+  padding-right:25px;
+  font-size:1.0em;
+  font-weight:bold;
+  text-decoration:none;
+  color:#FFF6D8;
+}
+
+#navigation a:hover, #navigation .aktuel {
+  color:#FFC643;
+}
+
+#branding {
+  float:left;
+  height:55px;
+  width:300px;
+  background:url('images/logo.jpg') center left no-repeat;
+  padding:8px 0 0 55px;
+  color:#FFC643;
+  font:normal 1em "Times New Roman";
+}
+#branding h1 {
+  font-size:1.4em;
+}
+#branding h2 {
+  font-size:0.8em;
+  font-weight:normal;
+}
+
+/*content styles */
+
+#content {
+  float:right;
+  padding:0 20px;
+  width:590px;
+  overflow:hidden;
+}
+
+.article {
+  margin-bottom:50px;
+  font-size:12px;
+  
+}
+
+.article p {
+  margin-bottom:8px;
+}
+
+.article h2 {
+  font-size:24px;
+  margin-bottom:12px;
+}
+
+.article h3 {
+  font-size:20px;
+  margin-bottom:12px;
+}
+
+.article a {
+  text-decoration:none;
+}
+
+.meta {
+  margin-bottom:5px;
+}
+
+.more a {
+ float:right;
+  display: block;
+  width: 84px;
+  height: 24px;
+  padding: 5px 0 0 0;  
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background: url(images/button_01.jpg) no-repeat;
+}
+
+.more a:hover {
+   float:right;
+  color: #000000;
+  background: url(images/button_02.jpg) no-repeat;
+}
+
+.page-title {
+  font:2.2em "Times New Roman", serif;
+  font-weight:bold;
+  letter-spacing:1px;
+  color:#FFC643;
+}
+.post-title {
+  font:1.5em "Times New Roman", serif;
+  font-weight:normal;
+  letter-spacing:1px;
+  color:#FFC643;
+}
+
+/*sidebar styles*/
+
+#sidebar {
+  float:left;
+  padding:0 15px 0 30px;
+  width:270px;
+}
+
+.sidebar_element {
+  width:256px;
+  margin: 20px 0;
+}
+
+.sidebar_element h5 {
+  background:url('images/navHeader.jpg') top center no-repeat;
+  font:1.5em Arial,sans-serif;
+  font-weight:bold;
+  color:#363422;
+  height:28px;
+  padding:8px 0 0 10px;
+}
+
+.sidebar_content {
+  border:1px solid #FFC643;
+  color:#eee;
+  padding:11px;
+  font-size:11px;
+}
+
+#page ul, ol, li {
+	list-style-position:inside;
+  margin-left:25px;
+}
+
+.commentform, 
+.commentform a:link {
+  font-size: 11px;
+  color: #ccc;
+}

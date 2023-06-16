@@ -1,0 +1,420 @@
+/* 
+Theme Name: leaves
+Description: ready for bright and shiny days on your weblog!
+Version: 1.2
+Date:   2009-05-16
+Author: Hanneke/Rabbeltje
+Author URI: www.rabbeltje.nl
+License: GPL 2.0 http://www.gnu.org/licenses/old-licenses/gpl-2.0.html 
+Required PivotX version: PivotX 2.0
+Used Extensions: fancybox, gallery
+*/
+
+* {
+	 margin: 0;
+	 padding: 0;
+	 }
+
+body {
+	font-size: 12px;
+	font-family: helvetica, Verdana, Arial, sans-serif;
+	background: url(images/bg.jpg) repeat center center fixed;
+	}
+
+p {
+	font-size: 12px;
+	font-family: helvetica, Verdana, Arial, sans-serif;
+	color: #5f7f00;
+	}
+
+h1 {
+    font-size: 32px;
+    font-family: helvetica, Verdana, Arial, sans-serif;
+    color: #9fc000;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: helvetica, Verdana, Arial, sans-serif;
+    color: #9fc000;
+}
+
+h1 a, h2 a {
+    /* Don't make headlines look too much like regular links, even 
+       though they're clickable */
+    text-decoration: none;
+	color: #9fc000;
+	border-bottom: 0px solid black;
+}
+
+h1 a:hover, h2 a:hover {
+    /* Don't make headlines look too much like regular links, even 
+       though they're clickable */
+	text-decoration: none;
+	border-bottom: 0px solid black;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: helvetica, Verdana, Arial, sans-serif;
+    color: #9fc000;
+}
+
+blockquote {
+    border: 1px solid #b2b266;
+    background-color: #eeeeee;
+    padding: 10px;
+    font-style: italic;
+    color: #3f3f00;
+}
+
+a {
+	color: #7f005f;
+	text-decoration: none;
+	border-bottom: 1px dashed #7f005f;
+	}
+
+a:visited {
+	color: #e03fc0;
+	text-decoration: none;
+	border-bottom: 0px dashed #7f005f;	
+	}
+
+a:hover {
+	color: #3f001f;
+	text-decoration: none;
+	border-bottom: 2px dashed #3f001f;
+	}
+
+/* styling elements */
+
+#wrapper {
+	width: 700px;
+	margin: 20px auto;
+	}
+
+#header {
+	width: 700px;
+	height: 70px;
+	background: url(images/header.png) center center no-repeat;
+	text-align: center;
+	padding-top: 30px;
+	}
+
+#header h1 {
+	font-size: 40px;
+	}
+
+#header h1 a:hover {
+	text-decoration: none;
+	}
+	
+
+#menu {
+	font-size: 20px;
+	margin-top: 10px;
+	height: 60px;
+	}
+
+#menu .link {
+	height: 60px;
+	padding-top: 20px;
+	}
+
+#menu .link a {
+	background: url(images/menu-l.png) no-repeat left center;
+	height: 20px;
+	min-width: 60px;
+	width: auto;
+	padding: 20px 0 20px 15px;
+	border: 0px solid black;
+	}
+
+#menu .link span {
+	background: url(images/menu-r.png) no-repeat left center;
+	height: 20px;
+	padding: 20px;
+	}
+
+#menu a.link:hover {
+	border: 0px solid black;
+	}
+
+#menu a.active {
+	background: url(images/menu-l.png) no-repeat left center;
+	height: 60px;
+	width: auto;
+	padding-left: 15px;
+	font-weight: bold;
+	}
+
+#menu .link a.active {
+	border: 0px solid black;
+	font-weight: bold;
+	}
+
+#menu .link a.active:hover {
+	border: 0px solid black;
+	font-weight: bold;
+	}
+
+#content {
+	width: 700px;
+	margin-top: 10px;
+	}
+
+#weblog {
+	float: left;
+	width: 500px;
+	}
+
+.entry {
+	width: 500px;
+	}
+
+.date {
+	float: left;
+	width: 50px;
+	margin-right: 10px;
+	background: url(images/date.png) center center no-repeat;
+	padding: 10px;
+	height: 50px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #7f9f1f;
+	}
+
+.post {
+	float: left;
+	width: 420px;
+	margin-bottom: 10px;
+	}
+
+.post-top {
+	background: url(images/pt.png) top center no-repeat;
+	padding: 30px;
+	min-height: 40px;
+	}
+
+.post-center {
+	background: url(images/pc.png) top center repeat-y;
+	padding: 0px 30px;
+	}
+
+.post-bottom {
+	background: url(images/pb.png) bottom center no-repeat;
+	text-align: center;
+	padding: 30px;
+	}		
+
+#sidebar {
+	float: right;
+	width: 200px;
+	}
+
+.s-entry {
+	margin-left: 20px;
+	margin-bottom: 10px;
+	}
+
+.s-entry-top {
+	background: url(images/st.png) top center no-repeat;
+	padding: 20px;
+	max-height: 40px;
+	}
+
+.s-entry-center {
+	background: url(images/sc.png) top center repeat-y;
+	padding: 0px 20px 0px 20px;
+	}
+
+.s-entry-bottom {
+	background: url(images/sb.png) bottom center no-repeat;
+	padding: 20px;
+	height: 5px;
+	}
+
+.s-entry-center ul {
+	margin-left: 10px;
+	list-style-type: square;
+	}
+
+#footer {
+	clear: both;
+	text-align: center;
+	background: url(images/footer.png) center center no-repeat;
+	height: 25px;
+	padding: 25px;
+	}
+
+.pivotx-image {
+	max-width: 360px;
+	 margin-top: 10px;
+	 border: 0px solid black;
+	}
+
+.rotator {
+	max-width: 140px;
+	}
+
+#gallery {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	}
+
+#gallery img {
+	margin: 2px;
+	padding: 0;
+	} 
+
+a.fancybox {
+	border: 0px solid black;
+	}
+
+a.fancybox:hover {
+	border: 0px solid black;
+	}
+
+/* comment stuff */
+p.com-count {
+	border-top: 1px dashed #5f7f00;
+	margin-top: 25px;
+	padding-top: 15px;
+	}
+
+.comment {
+	background: #ffffe0;
+	margin: 10px;
+	padding: 10px;
+	border: 1px dashed #5f7f00;
+	}
+
+.comment-text {
+	background-color: #ffffe0;
+	margin: 0px;
+	}
+
+.comment small {
+	color: #003f00;
+	font-size: 11px;
+}
+
+.commentform, .commentform a:link {
+	font-size: 11px;
+	color: #7f005f;
+}
+
+label {
+	color: #5f7f00;
+	}
+
+/* Example CSS code for Digg style navigation (provided by the
+paging extension. Original CSS code found at
+http://www.nowcss.com/navigation/create-digg-style-pagination. 
+Only used when using [[ paging action="digg" ]] in templates.
+*/
+
+#pages li a {
+	color: #7f005f;
+	background-color: #e0ff9f;
+	padding: 4px;
+	border: 2px solid #e0ff00;
+	text-decoration: none;
+	float: left;
+	background-image: none;
+	line-height: 1.2em;
+}
+
+#pages li a:hover {
+	color: #333;
+	background: #ffffff;
+	border: 2px solid #5f7f00;
+}
+
+#pages li.nolink {
+	color: #5f7f00;
+	border: 2px solid #5f7f00;
+	padding: 4px;
+}
+
+#pages li.current {
+	color: #5f7f00;
+	border: 2px solid #e0ff00;
+	padding: 4px;
+	background: #ffffff;
+}
+
+#pages li.skip {
+	color: #5f7f00;
+	border: 0px;
+	padding: 1px;
+}
+
+/* tagcloud */
+#tagcloud a {
+	border-bottom: 1px dashed #c03f9f;
+	color: #c03f9f;
+	}
+
+#tagcloud a:visited {
+	border-bottom: 0px dashed #cf3f9f;
+	color: #ff7fe0;
+	}
+
+#tagcloud a:hover {
+	border-bottom: 3px dashed #7f005f;
+	color: #7f005f;
+	text-decoration: none;
+	}
+
+/* Search forms */
+.searchbox, 
+.result-searchbox, .commentinput, .piv_notify, .piv_discreet {
+	font: 10px helvetica, Verdana, Arial, sans-serif;
+	border: 1px solid #5f7f00;
+	padding: 4px 3px 3px 3px;
+	background: #ffffe0;
+}
+
+.searchbutton,
+.result-searchbutton,
+.commentbutton {
+	font: 10px helvetica, Verdana, Arial, sans-serif;
+	border: 1px solid #c0e000;
+	background: #ffffe0;
+	height: 21px;
+}
+
+input.dim {
+	background-color: #ffffe0;
+	color: #5f7f00;
+}
+
+/* other stuff */
+
+blockquote {
+	background: #ffffe0;
+	margin: 10px 10px 0px 10px;
+	padding: 10px;
+	border: 1px dotted #c0e000;
+	}
+
+ol, dl, dt  {
+	margin-left: 20px;
+	}
+
+ul {
+	margin-left: 20px;
+	list-style-type: none;
+	list-style-image: url(bullet.png);
+	}
+
+dd {
+	margin-left: 40px;
+	}
+
+small {
+	color: #9fc000;
+	}

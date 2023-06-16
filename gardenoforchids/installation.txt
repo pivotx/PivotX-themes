@@ -1,0 +1,25 @@
+Installation.
+
+This theme uses Gallerax 0.2: a flexible gallery plugin for jQuery
+made by nodethirtythree design | http://nodethirtythree.com/
+
+The gallery is available in three different versions. You will find them in the template-files:
+
+_sub_gallery01.tpl
+_sub_gallery02.tpl
+_sub_gallery03.tpl
+
+You can select a different version with the include directive in front.tpl line 10.
+
+Each gallery has its own css-file:
+
+gallery01.css
+gallery02.css
+gallery03.css
+
+The appropriate css-file must be included in _sub_header.tpl line 25
+
+If you want to use your own images, you must provide images as well as thumbnails and enter
+your images in the _sub_gallery-file.
+
+In these files you can also change the text shown together with each image.

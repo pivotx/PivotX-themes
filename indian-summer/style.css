@@ -1,0 +1,443 @@
+/* 
+Theme Name: Indian summer
+Theme URI: www.rabbeltje.nl/?p=autumn
+Description: an indian summer-coloured theme
+Version: 1.1
+Date:   2009-03-23
+Author: Hanneke/Rabbeltje
+Author URI: www.rabbeltje.nl
+License: GPL 2.0 http://www.gnu.org/licenses/old-licenses/gpl-2.0.html 
+Required PivotX version: PivotX 2.0
+Used Extensions: fancybox
+*/
+/* main elements style */
+
+body {
+	font-size: 12px;
+	font-family: "century gothic", Verdana, Arial, sans-serif;
+	line-height: 1.4em;
+	margin: 0;
+	padding: 0;
+	background: #3f0000 url(images/body-bg.JPG) repeat top center fixed;
+	color: #5f1f0f;
+}
+
+a {
+	color: #7f3f1f;
+	text-decoration: underline;
+	}
+
+a:visited {
+	color: #4080c0;
+	}
+
+a:hover {
+	color: #80c0e0;
+	text-decoration: underline;
+	}
+
+h1 {
+	font-size: 32px;
+	font-family: "century gothic", Verdana, Arial, sans-serif;
+	color: #3f0000;
+	}
+
+h2 {
+	font-size: 24px;
+	font-family: "century gothic", Verdana, Arial, sans-serif;
+	color: #3f0000;
+	}
+
+h1 a, h2 a {
+	text-decoration: none;
+	color: #7f3f1f;
+	}
+
+h1 a:visited, h2 a:visited {
+	text-decoration: none;
+	color: #4080c0;
+	}
+
+h1 a:hover, h2 a:hover {
+	text-decoration: none;
+	color: #80c0e0;
+	}
+
+h3 {
+	font-size: 18px;
+	font-family: "century gothic", Verdana, Arial, sans-serif;
+	color: #3f0000;
+	}
+
+small { 
+	font-size: 11px;
+	color: #5f1f0f;
+	}
+
+p.weblogsubtitle {
+	color: #3f0000;
+	font-style: italic;
+	font-family: "century gothic", Verdana, Arial, sans-serif;
+	font-size: 20px;
+	}
+
+p.date {
+	color: #5f1f0f;
+	}
+
+p.entryfooter {
+	text-align: right;
+	padding: 10px;
+	color: #5f1f0f;
+	}
+
+blockquote {
+	border: 1px solid #3f0000;
+	background-color: #ffbf7f;
+	padding: 10px;
+	font-style: italic;
+	color: #5f1f0f;
+	}
+
+/* Design-elements */
+
+#wrapper {								/* the main wrapper that contains the weblog */
+	width: 800px;
+	margin: 0 auto;
+	position: relative;
+	background: #df9f3f;
+	}
+
+#header {								/* the header on top of your page */
+	width: 800px;
+	height: 140px;
+	background: url(images/header.jpg) center center;
+	}
+
+h1.title {								/* the headertext that links back to your index-page */
+	font: 50px "century gothic";
+	position: absolute;
+	left: 30px;
+	top: 20px;
+	}
+
+h1.title a, .title a:visited{						/* the headertext that links back to your index-page */
+	color: #ffbf3f;
+	}
+
+h1.title a:hover {
+	color: #ffbf7f;
+	text-decoration: none;
+	}
+
+h1.titleshade {								/* the shade-effect for the pagetitle */
+	font: 50px "century gothic";
+	color: #3f0000;
+	position: absolute;
+	left: 32px;
+	top: 22px;
+	}
+
+#top {									/* the coloured bar underneath the header */
+	background-color: #7f0000;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	}
+
+#side {									/* the sidebar */
+	float: left;
+	width: 200px;
+	background: #df9f3f;
+	padding: 10px;
+	}
+
+.s-entry {								/* entries on the sidebar */
+	margin-top: 10px;
+	background-color: #df9f3f;
+	color: #5f1f0f;
+	font: 12px "century gothic", Verdana, Arial, sans-serif;
+	border-top: 3px solid #5f1f0f;
+	}
+
+
+.s-entry a{
+	font: 12px "century gothic", Verdana, Arial, sans-serif;
+	}
+
+#content {								/* the main area with the posts, pages or chapters */
+	float: right;
+	width: 580px;
+	background: #df9f3f;
+	}
+
+.entry {								/* the entries in the content-area (pages, posts, chapters) */
+	background: #ffbf3f url(images/leafborder.gif) bottom center no-repeat; 
+	border-bottom: 5px solid #bf0000;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px 10px 20px 10px;
+	font: 12px "century gothic", Verdana, Arial, sans-serif;
+	color: #5f1f0f;
+	}
+
+#footer {								/* the copyright-info */
+	width: 800px;
+	background: #bf7f00 url(images/leafborder2.gif) top center no-repeat;
+	min-height: 60px;
+	text-align: center;
+	margin: 0 auto;
+	border-top: 5px solid #bf0000;
+	color: #ffff7f;
+	font: 12px "century gothic", Verdana, Arial, sans-serif;
+	clear: both;
+	}
+
+
+/* The page-tabs at the top of the page */
+
+table {									/* the table at the top that has the page-tabs */
+	border-collapse: collapse;
+	margin-left: 10px;
+	}
+
+.paging {								/* the table-cell that contains the page-link */
+	background: url(images/la.gif) bottom left no-repeat;
+	margin: 0 0 5px 0;
+	padding:  0 0 5px 20px;
+	font: 16px "century gothic", arial, sans-serif;
+	}
+
+.pg-r {									/* the table-cell that finishes the page-tab */
+	background: url(images/ra.gif) bottom left no-repeat;
+	width: 20px; 
+	}
+
+.paging a, .paging a:visited {
+	color: #ffffbf;
+	text-decoration: none;
+	}
+
+.paging a:hover {
+	color: #ffffdf; 
+	text-decoration: underline;
+	}
+
+/* Styling the next-previous page buttons and nr's */
+
+#pages {
+	clear: both;
+	margin: 20px 0px;
+	padding: 0px;
+	min-height: 24px;
+	}
+
+#pages ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px; 
+	}
+
+#pages li {
+	float: left;
+	display: inline;
+	margin: 0 2px 0 0;
+	display: block;
+	line-height: 1.2em; 	   
+	}
+	
+#pages li a {
+	color: #7f0000;
+	background-color: #ffbf3f;
+	padding: 4px;
+	border: 1px solid #bf7f00;
+	text-decoration: none;
+	float: left;
+	background-image: none;
+	line-height: 1.2em;
+	}
+
+#pages li a:hover {
+	color: #7f7f00;
+	background: #ffff7f;
+	border: 1px solid #bf7f00;
+	}
+
+#pages li.nolink {
+	color: #ffbf7f;
+	border: 1px solid #bf7f00;
+	padding: 4px;
+	}
+
+#pages li.current {
+	color: #ffff7f;
+	border: 1px solid #bf7f00;
+	padding: 4px;
+	background: #bf7f00;
+}
+
+#pages li.skip {
+	color: #bfbf00;
+	border: 0px;
+	padding: 1px;
+}
+
+/* Styling the tag-cloud and links */
+
+.taglinkext, a[rel="tag"] {
+	border-bottom: 1px solid #bf7f3f;
+	background: none;
+	color: #5f1f0f;
+}
+
+.taglinkext:hover, a[rel="tag"]:hover {
+	border-bottom: 3px solid #80c0e0;
+	color: #80c0e0!important;
+	background: none;
+}
+
+ul.taglist li, ul.taggeratilist li {
+	margin: 0.5em 0;
+	line-height: 1.3em;
+}
+
+ul.taglist a, ul.taggeratilist a {
+	font-weight: bold;
+}
+
+#tagcloud {
+	margin: 0;
+	padding: 0;
+	background-image: none;
+	background-color: transparent;
+}
+
+#flickrpics img {
+	margin-right: 8px;
+	margin-bottom: 4px;
+	border-width: 1px;
+}
+
+#flickrpics a, #flickrpics a:hover, #tagbuttons a, #tagbuttons a:hover {
+	background: none;
+}
+
+#tagbuttons img {
+	border-width: 1px;
+}
+
+/* Searchforms */
+
+.searchbox, .result-searchbox, .commentinput, .piv_notify, .piv_discreet {
+    border: 1px solid #bf7f00;
+    padding: 3px;
+    background: #ffffbf;
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.searchbutton, .result-searchbutton, .commentbutton {
+    border: 1px solid #bf7f00;
+    background: #ffffbf;
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    height: 21px;
+    margin-top: 5px;
+}
+
+
+.result-searchbox, .result-searchbutton {
+    margin-bottom: 10px;
+}
+
+fieldset > .result-searchbox {
+    margin-bottom: 11px;
+}
+
+.pivot-search fieldset, .pivot-search-result fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.pivot-search label, .pivot-search legend, .pivot-search-result label, .pivot-search-result legend {
+    display: none;
+    visibility: hidden;
+}
+
+#search-results li a {
+    font-weight: bold;
+}
+
+#search-results li {
+    line-height:1.4em;
+    margin-bottom: 0.5em;
+}
+
+/* commentform */
+
+.commentblock {
+    border: 1px solid transparent;
+    margin: 0;
+    padding: 0;
+}
+
+div.comment {
+    background:#ffffbf none repeat scroll 0%;
+    border-left:0px solid #bf7f00;
+    border-top:3px solid #bf7f00;
+    color: #5f1f0f;
+    margin: 14px 0px 0px 0px;
+    min-height:36px;
+    padding: 14px 14px 7px 14px;
+}
+
+div.comment cite {
+    color: #5f1f0f;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 24px;
+    display: block;
+    padding-top: 6px;
+    padding-bottom: 0px;
+    
+}
+
+.comment small {
+    color: #3f0000;
+    font-size: 11px;
+}
+
+.commentform, .commentform a:link {
+    font-size: 11px;
+    color: #7f3f1f;
+}
+
+.commentinput {
+    width: 170px;
+    margin: 0px 0px 3px 0px;
+}
+
+.pivot-image {
+	max-width: 500px;
+	border: 0px solid black;
+	margin: 10px;
+	}
+
+.pivot-popupimage {
+	margin: 10px;
+	border: 5px solid #bf7f00;
+	}
+
+.gallery {
+	 margin: 0;
+	 padding: 0;
+	 }
+
+.gallery img {
+	 margin: 2px;
+	 padding: 0;
+	 } 
+
+
+a.fancybox img {
+	 border: 2px solid #bf7f00;
+	 }

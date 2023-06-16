@@ -1,0 +1,262 @@
+/*
+Theme Name: Inagaddadavida
+Theme URI: http://residualeve.com/
+Description: PivotX fluid 2-column theme.
+Version: 2.0
+Date:   May 2012
+Author: Stark Raven
+Author URI: http://residualeve.com/
+License: SimPL, http://www.opensource.org/licenses/simpl-2.0.html
+Required PivotX version: PivotX 2.1
+/*
+
+/* RESET AND PRESETS =================*/
+body, p, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, blockquote, th, td {
+	 margin: 0;
+	 padding: 0;
+}
+h1 a, h2 a {
+    text-decoration:none;
+}
+a, a:visited {
+    color:#505;
+}
+a:hover {
+   color:#387;
+}
+h1, h2, h3, h4 {
+    font-family:Georgia, "Times New Roman", Times, serif;
+}
+hr {
+    margin:1em 0; border:0px solid transparent; border-bottom:1px solid #387;
+}
+
+/* BASIC =============================*/
+body {
+    background:#CFC;
+    margin:0;
+    padding:0;
+    font-size:1em;
+    font-family:Helvetica, Verdana, Arial, sans-serif;
+}
+
+/* faux border, does not show in EI6 */
+#outersleeve {
+    background:#CFC url(images/green.gif) repeat-y 67% 0; /* same as content width */
+    border-top:24px solid #CFC; /* hides faux border above the header */
+}
+
+/* HEADER ============================*/
+#header {
+    background:#FFF url(images/snakeheader.jpg) no-repeat 0 0;
+    border-top:1px solid #232;
+    text-align:right;
+}
+#header h1 {
+    padding:24px 1em 0 0; font-size:2.3em;
+}
+#header h1 a {
+    color:#505;
+}
+#header h1 a:hover, #header h1 a:active {
+    border-bottom:1px solid #505;
+}
+#header p.weblogsubtitle {
+    padding:0.4em 2.2em 1em 0;
+    color:#404;
+    font:1.1em Georgia, "Times New Roman", Times, serif;
+    font-style:italic;
+    letter-spacing:0.06em;
+}
+
+/* TOP NAV ===========================*/
+#menu {
+    background:#323;
+    padding-left:2.5em;
+    color:#FFF;
+    line-height:1.4em;
+    letter-spacing:0.05em;
+    height:1.8em; /* maintains colour of menu bar across page */
+    border:0.04em solid #000;
+    border-width:0.04em 0;
+}
+#menu ul {
+    list-style-type:none;
+    height:1.8em; /* displays left border */
+    border-left:0.04em solid #CFC;
+}
+#menu li {
+    display:block; float:left; border-bottom:0.04em solid #000;
+}
+#menu a {
+    display:block;
+    background:#323;
+    padding:0.2em 0.8em;
+    color:#FFF;
+    text-decoration:none;
+    border-right:1px solid #CFC;
+}
+#menu a:hover {
+    background:#CFC; color:#323; text-decoration:none;
+}
+
+/* CONTENT ===========================*/
+#content {
+    float:left; width:67%; letter-spacing:0.05em;
+}
+#content-inner {
+    padding:1em 2.8em 1em 3.2em;
+}
+#content h1 {
+    font-size:2em;
+}
+#content h2 {
+    font-size:1.7em;
+}
+#content h3 {
+    margin-bottom:0.4em; color:#505; font-size:1.2em;
+}
+#content p {
+    margin-bottom:1.7em; color:#211; line-height:1.3em;
+}
+#content blockquote, #content ul, #content ol, #content dl {
+    background-color:#F2F2F2;
+    margin-bottom:1.7em;
+    padding:2em;
+    color:#645;
+    line-height:1.3em;
+    border:1px solid #CCC;
+}
+#content ul, #content ol {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+#content dt {
+    line-height:2em; font-weight:bold;
+}
+#content blockquote {
+    font-style:italic;
+}
+small {
+    font-size:1.2em; color:#999;
+}
+p.date {
+    color:#999; font-size:0.7em; font-style:italic;
+}
+.pagenav {
+    margin-bottom: 1.2em; text-align:center;
+}
+p.entryfooter {
+    padding:10px;
+    color:#999;
+    font-size:0.7em;
+    text-align:right;
+    border-bottom:1px solid #387;
+}
+#content img {
+    border: none;
+}
+
+/* SIDEBAR ===========================*/
+#sidebar {
+	 float:left;
+	 margin-top:1.4em;
+	 padding-bottom:1em;
+	 width:30%;
+}
+#sidebar h3 {
+	 margin:0 0 0.4em 1em;
+	 color:#314;
+	 font-size:1.2em;
+	 font-family:Georgia, "Times New Roman", Times, serif;
+	 letter-spacing:0.1em;
+}
+#sidebar a,
+form.pivotx-search,
+form.switch { margin-left:1.3em; }
+#sidebar a.inlinelink { margin-left:0; }   /* removes margin from links in sidebar text */
+#sidebar a.here { text-decoration: none; }
+#sidebar p { 
+	 margin:0 2em; 
+	 font-size:0.8em;
+}
+#sidebar tt { 
+	 color:#027; 
+	 font-size:1.2em; 
+}
+#sidebar ul { 
+	 margin:0 0 0.5em 1.3em; 
+	 line-height:1.5em;
+    	 list-style:none; 
+}
+#archivemenu { margin-left:3em; width:12em; }
+
+/* FOOTER ============================*/
+#footer {
+	 clear:both;
+	 background-color:#7C9;
+	 margin:0;
+	 padding:10px;
+	 text-align:center;
+	 border-top:1px solid #323;
+}
+
+/* PIVOT_ESSENTIALS CHANGED ==================*/
+.pivot-popupimage { border:1px solid #BBB; }
+p.comments {
+	 background:#EEE; font-style:italic; 
+	 font-variant:small-caps;
+}
+div.comment { border-left:3px solid #7C9; }
+div.comment cite { color: #505; }
+.commentform b { line-height: 1.5em; }
+.commentform small {
+	 color:#444;
+	 line-height: 1.5em;
+}
+#spamquiz label {
+	 font-size: 1.2em;
+	 padding: 0.7em 0 0.3em 0;
+	 width: 100%;
+}
+
+/* DIGG NAV ==========================*/
+#pages { min-height:18px; }
+#pages li {
+	 font-size:0.7em; 
+	 line-height:0.9em;
+}
+#pages li a {
+	 color:#756;
+	 background-color:#EFE;
+	 border:1px solid #756;
+	 line-height:0.9em;
+}
+#pages li a:hover {
+	 color:#211; 
+	 border:1px solid #404;
+}
+/* To show the previous or next link, take out display:none in the pages li.nolink below. */
+#pages li.nolink {
+	 display:none; 
+	 color:#EFE; 
+	 border:1px solid #EFE;
+}
+#pages li.current {
+	 border:1px solid #756; 
+	 background:#756;
+}
+#pages li.skip { color:#756; }
+
+/* WIDGETS ==========================*/
+div.widget-lg {
+	 margin: 0 auto;
+	 width: 220px;
+	 height: 150px;
+}
+#minislideshow { margin-left: 1.3em; }
+#pivotx-slideshow-0 {
+	 width: 220px;
+	 height: 150px;
+	 border: 1px solid #353;
+}

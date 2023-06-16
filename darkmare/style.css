@@ -1,0 +1,349 @@
+/*
+Design by Metamorphosis Design
+http://www.metamorphozis.com
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+*
+{
+border: 0;
+margin: 0;
+}
+
+img
+{
+padding:0px;
+margin: 0px;
+}
+
+body{
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #000000;
+  background: url(images/bg1.jpg) top repeat-x #ffffff;
+  line-height: 18px;
+}
+
+
+#bg {
+width: 100%;
+background: url(images/bg_img.jpg) top center no-repeat #000000; }
+
+#bg_but {
+width: 100%;
+background: url(images/bg_but.gif) 0px 133px repeat-x;}
+
+#bg_foot {
+width: 100%;
+background: url(images/bg_foot.gif) bottom repeat-x;}
+
+#bg_2 {
+  background: url(images/bg3.jpg) center top no-repeat;
+  width: 1014px;
+  margin: 0px auto;
+  padding-top: 41px;
+}
+
+#main { width: 1014px;
+    margin: 0px auto;}
+
+
+
+#header { 
+width:100%;
+background: url(images/header.jpg) left top no-repeat;
+height: 181px;
+}
+
+#logo {  
+    padding: 48px 0px 0px 15px;
+    height: 86px;
+    width: 285px;
+
+}
+
+#logo H1 a{
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:100;
+  background:transparent;
+  text-decoration:none;
+  color:#fff;
+  font-style:italic;
+}
+
+#logo H2{
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:100;
+  background:transparent;
+}
+
+#buttons{
+  background: url(images/bg_but.jpg) left top no-repeat;
+  text-align:center;
+  height: 36px;
+  margin-left: 0px;
+  padding-top: 0px;
+}
+
+#buttons ul {
+    padding-left: 10px;
+    margin: 0px;      
+}
+
+#buttons li {
+ display: inline;  
+}
+
+#buttons a {
+  width:150px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  display: block;
+  float: left;
+  height: 27px;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding-top: 9px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+#buttons a:hover {
+ background:url(images/but_hover.gif) repeat-x top;
+}
+
+#buttons a.current {
+ background:url(images/but_hover.gif) repeat-x top;
+}
+
+#main {
+background:url(images/main.gif) left repeat-y;
+width: 1014px;}
+
+#content{
+  width: 1014px;
+}
+
+#left{
+  width: 261px;
+  float: left;
+  color:#000000;
+  background: #FFFFFF;
+  
+}
+
+#left H1{
+  height:30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:18px;
+  font-weight: 100;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 8px 0px 12px 5px;
+  background: url(images/tit_l.jpg) top repeat-x #FFFFFF;
+}
+
+.left_b {
+    padding-right: 25px;
+    padding-top: 3px;
+    padding-left: 48px;
+    padding-bottom: 10px;
+    background:url(images/fish_left.png) 8px 12px no-repeat;
+    height: 117px;
+}
+
+.box10 { 
+  background: url(images/img_10.gif) 5px 10px no-repeat;
+  height:auto;
+}
+.box11 { background: url(images/img_11.gif) 5px 10px no-repeat;
+}
+
+
+
+.text{
+  padding: 6px 20px 0px 9px;
+}
+
+.img {  float:left;
+    margin: 4px 15px 3px 0px;
+}
+
+#left span {  color:#770101;
+font-size:12px;
+}
+
+.font_it {
+font-style:italic;
+color: #FCD8D8;
+}
+
+.w {
+  line-height: 25px;
+  font-weight:bold;}
+
+#right H1{
+  height:30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:18px;
+  font-weight: 100;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 8px 0px 12px 5px;
+  background: url(images/tit_l.jpg) top repeat-x #FFFFFF;
+}
+
+.read{
+  text-align:right;
+  margin:0px;
+  padding: 7px 2px 0px 2px;
+  background:url(images/bg_read.gif) 0px 11px no-repeat;
+}
+.read a {
+  font-size:11px;
+  color:#FFFFFF;
+  height:13px;
+  text-decoration:none;
+}
+
+.read_c{
+  text-align:right;
+  margin:0px;
+  padding: 0px 0px 0px 2px;
+}
+
+.read_cb{
+  text-align:right;
+  margin:0px;
+  background: url(images/read1.gif) right bottom no-repeat #E2E2E2;
+  line-height: 11px;
+}
+
+.read_cb a {
+  font-size:11px;
+  color:#FFFFFF;
+  text-decoration:none;
+  padding: 0px 2px 0px 2px;
+}
+
+#right{
+float: right;
+width: 261px;
+}
+.right_w { background: #ffffff;
+padding: 0px 5px 20px 5px;}
+
+.munth {
+font-weight:bold;
+background: url(images/fish_munth.gif) 17px 12px no-repeat;
+padding: 5px  0px 5px 37px;
+text-decoration:none;}  
+
+.munth a{color:#000000;
+text-decoration: none;
+font-weight:100;
+font-size: 12px;}
+
+.munth a:hover {
+text-decoration: underline;
+}
+
+#center {
+width: 472px;
+float:left;
+margin-left: 10px;
+color:#FFFFFF;}
+
+.text {
+margin-bottom:30px;
+}
+
+.text a {
+color: #ffffff
+}
+
+.more {
+ font-size:10px;
+ text-decoration: none;
+ font-weight:100;
+ display:block;
+ width: 75px;
+ text-align: center;
+ float: right;
+ height: 20px;
+ background: url(images/b_read.gif) left top no-repeat;
+}
+
+.cent_box {
+background: #E2E2E2;
+float:left;
+width: 148px;
+}
+
+.cent_box_text {
+padding: 11px 5px 0px 10px;
+color: #000000;
+font-style:italic;
+}
+
+.float_left {
+float:left;}
+
+.title H1 {
+  background: url(images/tit_r.gif) left top no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:18px;
+  font-weight: 100;
+  color: #FFFFFF;
+  text-align:left;
+  padding: 9px 0px 15px 9px;}
+
+.title H1 a{
+  color: #FFFFFF;
+  text-decoration:none;
+}
+
+#all_col {
+width: 100%;}
+
+#footer{
+  height: 62px;
+  width: 100%;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  clear:both;
+  padding: 28px 0px 0px 0px;
+}
+
+#footer a{
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#footer a:hover{
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.comment-text {
+ color:#333;
+}
+
+.comment-text a {
+ color:#333;
+}
+
+
+.commentform, 
+.commentform a:link {
+ font-size: 11px;
+ color: #ddd;
+}
+
+.pivotx-search-result a {
+color: #ffffff
+}

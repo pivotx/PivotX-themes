@@ -1,0 +1,534 @@
+@import 'ie-win.css';
+
+/*
+Theme Name: Earthlycalm
+Theme URI: http://www.peterboorsma.nl
+Version: 2.0
+Date: 03 12 2009
+Author: 
+Author URI: http://www.peterboorsma.nl
+Description: A 2 column theme, originally designed by Make Quick http://www.smartertemplates.com/ for Wordpress
+Required PivotX version: PivotX RC
+Used Extensions: Lifestream Widget, Delicious Bookmarks
+*/
+
+/* Links */
+
+a:link { text-decoration: none; color: #6ECEEA; }
+
+a:visited { text-decoration: none; color: #6ECEEA; }
+
+a:hover, a:active { color: #75B1C2; }
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; margin: 20px 0 10px; }
+
+h1 { font-size: 32px; margin-bottom: 0px; margin-top: 20px;}
+
+h2 { font-size: 28px; }
+
+h3 { font-size: 24px; }
+
+h4, h5, h6 { font-size: 20px; }
+
+/* Other Html Elements */
+.titles { font-weight: normal; border-bottom-width: 0; font-size: 24px; text-decoration: none; underline: none;}
+.titles a:link, .titles a:visited, .titles a:active {
+text-decoration: none;
+underline: none;
+font-size: 24px;
+font-weight: normal;
+border-bottom-width: 0;
+}
+
+pre, blockquote {
+overflow: auto;
+padding: 0 10px;
+margin: 20px 30px;
+line-height: 1.8em;
+background-color: #f5f5f5;
+border: 1px solid #e0e0e0;
+}
+.post-wrapper {
+background: #FFFFFF;
+padding-left: 20px;
+padding-top: 10px;
+padding-bottom: 20px;
+padding-right: 20px;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+pre:hover, blockquote:hover
+{
+background-color: #f0f0f0;
+border: 1px solid #d0d0d0;
+}
+
+pre { padding-top: 10px; padding-bottom: 10px; }
+
+code { color: #779900; font-family: consolas, 'courier new', courier, sans-serif;
+ }
+
+ul, ol { line-height: 2.0em; }
+
+ul { list-style-image: url(images/bullet.gif); }
+
+abbr, acronym { font-style: normal; border-bottom: 1px dotted #333333; cursor: help; }
+
+del { text-decoration: line-through; color: #999999; }
+
+ins { text-decoration: none; color: #009977; }
+
+/* Structure */
+
+body
+{
+margin: 0;
+padding: 0;
+color: #222222;
+background-repeat: repeat-x;
+background-color: #444034;
+font: normal 76% "Trebuchet MS", "Lucida Grande", Verdana, Georgia, Sans-Serif;
+}
+
+#wrapper2 {
+width: 768px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#header
+{
+float: left;
+width: 768px;
+background: #5B574D;
+clear: right;
+background-image: url(images/header.gif);
+padding-left: 0px;
+height: 125px;
+}
+
+#navigation
+{
+clear: both;
+float: left;
+width: 100%;
+background: #716B5E url(images/nav-bg.gif);
+height: 46px;
+margin-top: 0px;
+padding: 0px;
+}
+
+#wrapper
+{
+clear: both;
+float: left;
+width: 100%;
+color: #555555;
+background: #FCF8DC;
+}
+
+#content-wrapper
+{
+width: 65%;
+float: left;
+}
+
+#content
+{
+float: left;
+padding: 0 0px 10px 30px;
+}
+
+#sidebar-wrapper
+{
+width: 35%;
+float: right;
+margin-top: 20px;
+}
+
+#sidebar
+{
+float: right;
+padding: 0px 15px 10px 10px;
+width: 210px;
+margin-right: 15px;
+margin-top: 0px;
+}
+
+#footer
+{
+clear: both;
+width: 748px;
+text-align: left;
+padding-left: 20px;
+background: #FCF8DC;
+color: #6ECEEA;
+font-size: 11px;
+margin: auto;
+padding-bottom: 10px;
+}
+
+#footer a {
+color: #6ECEEA;
+font-size: 11px;
+}
+
+#footer a: visited {
+color: #6ECEEA;
+}
+#footer a:hover {
+color: #75B1C2;
+border-bottom: 1px dashed #75B1C2;
+}
+#extras
+{
+float: left;
+width: 780px;
+color: #444444;
+text-align: left;
+padding: 0 10px 10px;
+margin: 10px 12px 20px;
+background-color: #f5f5f5;
+border-top: 1px solid #e0e0e0;
+border-bottom: 1px solid #e0e0e0;
+}
+
+/* Header */
+
+#header h1 { padding-left: 30px; }
+#header h1 a {font-size: 35px; text-transform: lowercase; }
+
+/* Navigation */
+
+#navigation ul { list-style-type: none; list-style-image: none; float: left; padding: 0px 0px 0px 0px; margin: 0px; }
+
+#navigation li { float: left; margin: 0px; padding: 0px; }
+
+#navigation li a:link,
+#navigation li a:visited
+{
+float: left;
+color: #FCF8DC;
+display: block;
+padding-right: 10px;
+padding-left: 10px;
+padding-top: 10px;
+height: 36px;
+font-size: 14px;
+margin-top: 0px;
+
+}
+
+#navigation li a:hover,
+#navigation li a:active
+{
+color: #FCF8DC;
+background: #716B5E;
+background-repeat: repeat-x;
+font-size: 14px;
+margin-top: 0px;
+background-image: url(images/nav-bg2.gif);
+}
+
+#navigation li.active a
+{
+color: #555555;
+background-color: #ffffff;
+}
+
+/* Wrapper */
+
+#wrapper a:link { font-weight: bold; }
+
+#wrapper a:visited { font-weight: bold; }
+
+#wrapper a:hover, #wrapper a:active { }
+
+/* Content */
+
+#content .post-title a { border-bottom-width: 0; }
+
+#content .post p.img { float: left; margin: 0 15px 0 0; }
+
+#content .post p.img img { padding: 8px; border: 1px solid #d0d0d0; background-color: #eeeeee; }
+
+#content .post-footer, #content .post-header
+{ 
+font-size: 90%; 
+color: #888888;
+margin-bottom: 5px; 
+padding:5px 5px 5px 5px;
+background-repeat: none;
+background-color: #F8F8F8;
+border: 1px solid #EBEBEB;
+}
+
+.post-footer { clear: both; }
+
+#content .post-header 
+{
+text-align: center;
+}
+
+/* Sidebar */
+
+.sideblock
+{
+padding: 5px 10px;
+margin-bottom: 20px;
+background: #F9F4D3;
+border: 1px solid #EAE3B8;
+background-repeat: no-repeat;
+background-position: top;
+}
+
+.sideblock ul { }
+
+.sideblock h3 { margin-top: 5px; font-size: 14px; color: #75B1C2; font-weight: bold; }
+
+#sidebar dt { margin: 0; padding-top: 5px; font-weight: bold; color: #666666; }
+
+#sidebar dd { margin: 0 0 5px; padding-bottom: 5px; line-height: 1.8em; }
+
+#sidebar dd a:link { border-bottom-width: 0; font-weight: normal;  border-bottom: none; text-decoration: none;}
+
+#sidebar dd a:visited { border-bottom-width: 0; font-weight: normal; border-bottom: none; text-decoration: none; }
+
+#sidebar dd a:hover, #sidebar dd a:active { border-bottom: none; text-decoration: none;}
+
+/* Extras */
+
+#extras h6 { font-size: 14px; text-transform: uppercase; color: #555555; }
+
+#friends
+{
+float: left;
+width: 150px;
+margin-left: 20px;
+margin-right: 10px;
+}
+
+#links
+{
+float: left;
+width: 275px;
+margin-right: 50px;
+}
+
+#about
+{
+float: left;
+width: 250px;
+margin-right: 20px;
+}
+
+#friends ul { padding-left: 20px; }
+
+#links dl, #links dt, #links dd { margin: 0; padding: 0; }
+
+#links dt { font-weight: bold; padding-top: 5px; }
+
+#links dd { margin-bottom: 5px; padding-bottom: 5px; border-bottom: 1px dotted #999999; }
+
+/* Comments Styling */
+#commentlist li {
+margin-bottom: 1.5em;
+padding-bottom: 1em;
+border-bottom: 1px solid #700000;
+}
+
+#commentform {
+margin: 1em 0;
+background: #FCF8DC;
+width: 280px;
+}
+
+#commentform textarea {
+background: #f8f7f6;
+border: 1px solid #d6d3d3;
+width: 280px;
+}
+#commentform textarea:hover {
+background: #FCF8DC;
+border: 1px solid #d6d3d3;
+}
+#commentform textarea:focus {
+background: #ffffff;
+border: 1px solid #939793;
+}
+
+#commentform #email, #commentform #author, #commentform #url {
+font-size: 1.1em;
+background: #f8f7f6;
+border: 1px solid #d6d3d3;
+width: 280px;
+}
+#commentform #email:hover, #commentform #author:hover, #commentform #url:hover {
+font-size: 1.1em;
+background: #ffffff;
+border: 1px solid #d6d3d3;
+width: 280px;
+}
+#commentform #email:focus, #commentform #author:focus, #commentform #url:focus {
+font-size: 1.1em;
+background: #ffffff;
+border: 1px solid #939793;
+width: 280px;
+}
+#commentform input{
+margin-bottom: 3px;
+}
+
+.post-wrapper .date {
+background: url(images/date.gif) no-repeat;
+height: 54px;
+margin-bottom: 0px;
+width: 54px;
+text-align: center;
+float: left;
+margin-top: 15px;
+}
+.post-wrapper .date .month {
+display: block;
+color: #FFFFFF;
+padding: 2px 0px;
+text-align: center;
+text-transform: uppercase;
+font-size: 10px;
+margin-top: 2px;
+font-weight: bold;
+margin-bottom: 3px;
+}
+.post-wrapper .date .day {
+display: block;
+color: #968B73;
+font: 2.3em Georgia;
+padding-top: 0px;
+text-align: center;
+margin-top: -8px;
+}
+
+#left {
+width: 60px;
+float: left;
+}
+
+.slogan {
+font-size: 13px;
+color: #FFFFFF;
+text-transform: lowercase;
+margin-left: 30px;
+margin-bottom: 2px;
+}
+
+.more-link {
+margin-bottom: 6px;}
+
+/* Pivot styles, these styles override the settings in pivot_essentials.css */
+
+.sideblock h2 {
+font-size: 15px;
+}
+
+.sideblock .searchbox {
+width: 120px;
+}
+
+/* Styles used for Tags */
+.taglinkext, a[rel="tag"] {
+border: none;
+background: none;
+}
+
+.taglinkext:hover {
+border: none;
+color: #00A8FF!important;
+background: none;
+}
+
+/* page navigation digg style */
+
+#pages {
+clear: both;
+margin: 20px 0px;
+padding: 0px;
+min-height: 24px;
+}
+#pages ul {
+list-style-type: none;
+padding: 0px;
+margin: 0px; 
+}
+#pages li {
+float: left;
+display: inline;
+margin: 0 2px 0 0;
+display: block;
+line-height: 1.2em;
+}
+#pages li a {
+color: #888;
+background-color: #F8F8F8;
+padding: 4px;
+border: 1px solid #EBEBEB;
+text-decoration: none;
+float: left;
+background-image: none;
+line-height: 1.2em;
+}
+#pages li a:hover {
+color: #333;
+background: #FFF;
+border: 1px solid #75B1C2;
+}
+#pages li.nolink {
+color: #BBB;
+border: 1px solid #EBEBEB;
+padding: 4px;
+}
+#pages li.current {
+color: #FFF;
+border: 1px solid #EBEBEB;
+padding: 4px;
+background: #6ECEEA;
+}
+#pages li.skip {
+color: #666;
+border: 0px;
+padding: 1px;
+}
+
+.center {
+text-align: center;
+}
+
+/* images in posts */
+
+.pivot-image, .pivot-popupimage {
+border: none;
+margin: 0 10px 10px 0;
+padding: 0;
+}
+
+/* comments */
+
+div.comment {
+background:#fff none repeat scroll 0%; /* edited */
+border: none;
+color: #333;
+margin: 14px 0px 0px 0;
+min-height:36px;
+padding: 14px 14px 7px 14px;
+}
+
+/* let's make the commentform a bit smaller... */
+.markItUp {
+	margin:5px 0;
+	width:468px!important;
+}
+
+#piv_comment {
+	width: 456px!important;
+}

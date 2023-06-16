@@ -1,0 +1,33 @@
+/*
+padding en margin aangepast zodat de border-top niet over een plaatje valt als die onderaan een entry staat.
+*/
+.comments {
+	border-top: 1px solid #7f0000;
+	text-align: center;
+	padding-top: 10px;
+	margin-top: 10px;
+	}
+	
+/*
+clear:both toegevoegd zodat plaatjes onderaan entries niet door de entryfooter heen vallen
+*/
+
+p.entryfooter {
+	clear: both;
+	text-align: right;
+	padding: 10px;
+	color: #3f0000;
+	}
+	
+	
+/*
+Toegevoegd om ruimte te geven tussen uitgelijnde plaatjes en p tekst
+*/
+
+.align-left {
+	margin-right: 10px;
+}
+
+.align-right {
+	margin-left: 10px;
+}

@@ -1,0 +1,368 @@
+/*
+Theme Name: Philadelphia
+Theme URI: http://themes.pivotx.net
+Description: a PivotX theme based on the feeling you get when in Philadelphia
+Version: 1.0
+Date: 2010-01-20
+Author: John Schop
+Author URI: http://www.johnschop.nl or http://www.windmillwebwork.com
+License: GPL 2.0 http://www.gnu.org/licenses/old-licenses/gpl-2.0.html 
+Required PivotX version: PivotX 2.0 (and higher)
+Used Extensions: Ultimate Fields, Gallery
+
+Instructions: If desired (it's totally optional), activate the Ultimate Fields extension, and create a field with internal name 'quote' for both pages and entries. The text in the field will be used to create a fancy 'pullquote' in your entry or page.
+
+If you use the 'Gallery' extension, Gallery thumbnails will be displayed for each entry on the front page and on the entry page, and also on 'normal' pages.
+*/ 
+
+/* General reset stuff */
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0; }
+ 
+a, ins {
+	text-decoration: none;
+	color: #587384; }
+ 
+/* General styles */
+body {
+	background-color: #121212;
+	color: #A5A5A5;
+	font-size: 100%;
+	font-family: Georgia, "Times New Roman", Times, serif; }
+ 
+h1 {
+	font-size: 60px;
+	font-style: italic;
+	font-weight: bold;
+	color: #587384;
+	letter-spacing: -2px; }
+ 
+#header { margin: 50px 0px 20px 10px; }
+ 
+.weblogsubtitle {
+	margin: -15px 0px 0px 80px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 20px; }
+ 
+/* Container */
+#container {
+	width: 940px;
+	margin: 0 auto; }
+ 
+/* Content */
+#content {
+	width: 711px;
+	margin-right: 40px; }
+ 
+/* Wrap */
+.wrap { width: 100%; }
+ 
+.left-col { float: left; }
+ 
+.right-col { float: right; }
+ 
+/* Entry */
+.entry {
+	width: 100%;
+	clear: both;
+	padding: 14px 0; }
+ 
+.error, .page { border: 0; }
+ 
+/* Entry Content */
+.entry-content {
+	width: 500px;
+	margin-right: 21px;
+	display: inline; }
+ 
+	.entry-content p {
+		line-height: 24px;
+		letter-spacing: 1px; }
+ 
+	.entry-content a { font-weight: bold; }
+ 
+	.entry-content p a { font-weight: normal; }
+ 
+	.entry-content a:hover { text-decoration: underline; }
+ 
+	/* entry Content Headings */
+.entry-content h2 {
+		font-size: 28px;
+		font-style: italic;
+		line-height: 30px; }
+ 
+		.entry-content h2 a:hover { text-decoration: underline; }
+ 
+	.entry-content h3 {
+		font-size: 14px;
+		padding: 5px 0; }
+ 
+	/* Entry Content Lists and Blockquote */
+.entry-content ol, .entry-content ul { line-height: 20px; }
+ 
+	.entry-content ul { padding-left: 30px; }
+ 
+		.entry-content ul li {
+			list-style: circle;
+			padding: 3px 0; }
+ 
+	.entry-content ol { padding-left: 37px; }
+ 
+		.entry-content ol li {
+			list-style: decimal;
+			padding: 3px 0; }
+ 
+	.entry-content blockquote {
+		margin: 0 auto;
+		padding: 25px 5px 5px 25px;
+		border: 0px solid #292929;
+		font-size: 20px;
+		font-style: italic;
+		font-weight: bold;
+		background: url(../images/pullquote.jpg) no-repeat;
+		width: 80%; }
+ 
+	/* Entry Content (read more) */
+.entry-content a.more-link {
+		clear: both;
+		width: 100px;
+		text-align: center;
+		display: block;
+		margin: 12px 0;
+		padding: 4px 8px;
+		font-size: 14px;
+		line-height: 20px;
+		border: 1px solid #292929; }
+ 
+	.entry-content a:hover.more-link {
+		text-decoration: none;
+		background: #292929;
+		border: 1px solid #587384; }
+ 
+.entry-title {
+	border-bottom: 1px solid #292929;
+	padding: 5px 0;
+	margin-bottom: 5px; }
+ 
+/* Entry Meta */
+.entry-meta {
+	width: 140px;
+	margin-left: 6px;
+	text-align: right;
+	display: inline;
+	padding-top: 2px; }
+ 
+	.entry-meta a { color: #587384; }
+ 
+		.entry-meta a:hover { text-decoration: underline; }
+ 
+	/* entry Meta Date */
+.entry-meta h3 {
+		padding: 3px 0;
+		margin-bottom: 5px; }
+ 
+		.entry-meta h3 span.day {
+			display: block;
+			float: right;
+			line-height: 28px;
+			font-size: 35px; }
+ 
+		.entry-meta h3 span.month, .entry-meta h3 span.year { width: 40px; }
+ 
+		.entry-meta h3 span.month {
+			display: block;
+			float: right;
+			font-size: 16px;
+			line-height: 14px;
+			padding-left: 4px;
+			text-transform: uppercase;
+			text-align: center; }
+ 
+		.entry-meta h3 span.year {
+			font-size: 14px;
+			display: block; }
+ 
+	/* Entry Meta Author and Comments */
+.entry-meta h4 {
+		font-size: 14px;
+		padding: 3px 3px 3px 0; }
+ 
+		.entry-meta h4.author, h4.category , h4.comments { font-style: italic; }
+ 
+		.entry-meta h4.author { border-top: 1px solid #292929; }
+ 
+/* Entry quote */
+.entry-quote {
+	margin: 0;
+	padding: 5px;
+	border: 0px solid #292929;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+	background: url(../images/pullquote.jpg) no-repeat;
+	width: 150px;
+	float: right; }
+ 
+	.entry-quote p {
+		text-align: left;
+		padding: 20px 0px 0px 20px; }
+ 
+/* paging */
+#pages {
+	margin-left: 190px;
+	margin-bottom: 0px; }
+ 
+	#pages li a {
+		background: #121212;
+		color: #587384;
+		border: 1px solid #292929; }
+ 
+		#pages li a:hover {
+			border: 1px solid #587384;
+			background: #292929;
+			color: #a5a5a5; }
+ 
+	#pages li.nolink {
+		border: 1px solid #292929;
+		color: #292929; }
+ 
+	#pages li.current {
+		border: 1px solid #587384;
+		background: #292929;
+		color: #a5a5a5; }
+ 
+/* Comments in entrypage */
+#entry-comments h3 {
+	font-size: 20px;
+	font-style: italic; }
+ 
+#entry-comments li {
+	list-style-position: inside;
+	border: 1px solid #292929;
+	padding: 3px 10px; }
+ 
+.comment-text {
+	background: transparent;
+	margin: 0px 0px 0px 20px;
+	padding: 10px; }
+ 
+.commentlist { margin-bottom: 12px; }
+ 
+.commentform {
+	margin-top: 10px;
+	padding-left: 37px;
+	color: #a5a5a5; }
+ 
+	.commentform a:link { color: #587384; }
+ 
+.commentbutton { margin-bottom: 8px; }
+ 
+	.commentbutton *:hover {
+		text-decoration: none;
+		background: #292929;
+		color: #a5a5a5;
+		border: 1px solid #587384; }
+ 
+/* Sidebar */
+#sidebar { width: 189px; }
+ 
+	#sidebar .block { padding: 14px 4px 14px 14px; }
+ 
+	#sidebar ul {
+		list-style: none;
+		border-top: 0px; }
+ 
+		#sidebar ul li a {
+			display: block;
+			border: 1px solid #121212;
+			padding: 5px;
+			text-align: center;
+			color: #a5a5a5; }
+ 
+			#sidebar ul li a:hover {
+				text-decoration: none;
+				background: #292929;
+				color: #a5a5a5;
+				border: 1px solid #587384; }
+ 
+			#sidebar ul li a.current {
+				text-decoration: none;
+				background: #292929;
+				color: #a5a5a5;
+				border: 1px solid #587384; }
+ 
+	#sidebar h2 {
+		text-align: center;
+		font-size: 28px;
+		font-style: italic;
+		font-weight: bold;
+		line-height: 30px;
+		padding: 5px 0;
+		display: block;
+		border-bottom: 1px solid #292929;
+		color: #587384; }
+ 
+.sidebar-comment-text {
+	font-weight: normal;
+	color: #a5a5a5; }
+ 
+#comments ul li a { text-align: left; }
+ 
+/* Footer */
+#footer {
+	width: 940px;
+	margin: 20px auto 0px;
+	padding-top: 18px;
+	position: relative;
+	border-top: 1px solid #292929; }
+ 
+.footer-col { padding: 0px 10px; }
+ 
+	.footer-col p { font-size: 12px; }
+ 
+/* Gallery */
+div.gallery {
+	margin: 0;
+	padding: 0; }
+ 
+	div.gallery img {
+		margin: 2px;
+		padding: 2px;
+		border: 1px solid #587384; }
+ 
+/* Some overriding */
+.pivotx-wrapper {
+	margin-top: 8px;
+	margin-bottom: 8px; }
+ 
+	.pivotx-wrapper img, .pivotx-wrapper a img {
+		border: 1px solid #587384;
+		padding: 3px; }
+ 
+.pivotx-search { padding-left: 14px; }
+ 
+.pivotx-search-result h2 {
+	font-size: 28px;
+	font-style: italic;
+	line-height: 30px;
+	margin-bottom: 8px; }
+ 
+.pivotx-search-result ul { margin-top: 10px; }
+ 
+/* Fix */
+.wrap:after,
+.block ul:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden; }

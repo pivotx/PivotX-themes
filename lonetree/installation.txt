@@ -1,0 +1,6 @@
+Installation
+
+This theme uses the JavaScript library Jquery. Make sure that this library is installed. You can do this in 
+the admin area under Advanced Configuration.
+
+Add the key: always_jquery and give it the value 1.

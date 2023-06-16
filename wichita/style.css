@@ -1,0 +1,218 @@
+/* 
+Theme Name: Wichita
+Theme URI: http://www.windmillwebwork.com
+Description: Wichita Theme for PivotX
+Version: 1.0
+Date:	2010-08-08
+Author: Windmill Web Work
+Author URI: http://www.windmillwebwork.com
+License: GPL 2.0 http://www.gnu.org/licenses/old-licenses/gpl-2.0.html 
+Required PivotX version: PivotX 2.0
+Used Extensions: WZUP (optional)
+*/ 
+
+
+/**************** Body *********************/
+*{margin:0;padding:0;}
+body{background:#fff url(images/bg.jpg) top repeat-x; font-family:Arial; font-size:14px;}
+html, body{height: 100%;}
+#wrapper {width:960px;min-height: 100%;height: auto !important;height: 100%; margin:auto;margin-bottom:-104px;}
+
+/**************** Links & formatting *********************/
+a, a:link, a:visited, a:active {color:#ff0000; text-decoration:none;}
+a:hover{color:#666666;}
+h2.message {font-size:12px; color: #666; background-color:#EFEFEF; padding:5px 5px 5px 10px; margin-bottom:10px; text-transform:uppercase; font-weight:normal;}
+
+/**************** Header *********************/
+#header {height:64px; padding-bottom:6px; margin-top:10px; margin-left:10px; position:relative;}
+#siteinfo {width:575px; float:left; }
+#siteinfo h1 a {color:#CCCCCC; font-size:34px; display:block;}
+#siteinfo h1 a:hover {color:#FFFFFF;}
+#siteinfo h2 {color: #666666; font-size:11px; text-transform:uppercase; margin-top:2px;}
+#siteinfo_right {width:375px; float:right;}
+#topsearch {margin-top:10px; float:right; margin-right:10px;}
+.rss {width:105px; height:56px; position:absolute; bottom:0px; right:180px; display:block;}
+.searchbox {padding:5px 7px 5px 7px; border:none; color:#ccc; font-family:Arial, Helvetica, sans-serif; background-color: #4A4A4A; font-size:12px; width:160px;}
+
+/**************** Navigation *********************/
+#nav_left {width:20px; height:50px; background:url(images/menu-left.jpg); float:left;}
+#navigation{height:50px; background:url(images/menu-bg.jpg) repeat-x; float:left; width:920px;}
+#menu{text-align:left;}
+#menu li{display:inline;list-style:none; font-weight:bold; font-size:16px;}
+.page_item a:link, .page_item a:visited{color: #fff; line-height:36px; display:block; padding:0 20px 0 20px; float:left; margin-right:5px;margin-top:2px;}
+.page_item a:hover {color:#fff;text-decoration:none; background:url(images/menu_over.jpg) repeat-x;}
+#current_page_item a:link, #current_page_item a:visited{color:#fff; background:url(images/menu_over.jpg) repeat-x; margin-right:5px; line-height:36px; padding:0px 20px 0 20px; display:block; float:left; text-decoration:none; margin-top:2px;}
+#nav_right {width:20px; height:50px; background:url(images/menu-right.jpg); float:left;}
+.pagenav{background-color:#fff6f6;border:1px solid #dbdbdb;color:#333;font-size:10px;line-height:20px;margin:10px 0px 10px;padding:2px 6px 2px 6px;text-transform:uppercase;overflow:hidden;}
+
+/**************** Entry *********************/
+#blog {float:left; width:492px; margin-top:20px; margin-left:8px;}
+.entry {padding:10px 0 30px 0;}
+.entry h2 {line-height:32px; margin-bottom:5px;}
+.entry h2 a{font-size:26px; color:#333333; letter-spacing:-1px;}
+.entry h2 a:hover {color:#000000;}
+html>body .entry  ul { margin-left: 0px; padding: 0 0 0 30px; list-style: none; padding-left: 10px; text-indent: -10px; } 
+html>body .entry  li { margin: 7px 0 8px 10px; }
+.entry ul li:before{ content: "\00BB \0020"; }
+.entry ul, .entry ol {list-style-position:inside;}
+.entry img {margin:0 10px 10px 10px;}
+.date {font-size:11px; color: #ff0000; padding:5px 0 5px 0; position:relative; height:20px;}
+.comms { position:absolute; right:0px; top:0px;}
+.comms a {font-size:11px; text-transform:uppercase; font-weight:bold; color: #fff; background:url(images/comment.gif) no-repeat; padding:11px 0 0 0px; text-align:center; display:block; height:18px; width:107px;}
+.comms a:hover {color: #666;}
+.meta{background-color:#fff6f6;border:1px solid #dbdbdb;color:#333;font-size:10px;line-height:20px;margin:10px 0px 10px;padding:2px 6px 2px 6px;text-transform:uppercase;}
+.meta a { color:#666; font-weight:bold;}
+.meta a:hover {color:#000;}
+.date span { font-weight:bold; color:#ff0000;}
+.content {line-height:24px; color:#333;}
+.content p {margin:0 0 15px 0;}
+.entrymetadata {padding:5px; border:1px solid #dbdbdb;background-color:#EEEFE0; font-size:10px; line-height:18px; text-transform:uppercase;}
+.clear {clear: both;}
+.padleft5{padding-left: 5px;}
+
+/**************** Sidebar *********************/
+#sidebar {float:left; width:420px; padding:15px 0 0 40px;}
+#sidebar p {color:#666; line-height:20px;}
+#sidebar ul li {list-style:none;}
+#sidebar h2 {font-size:15px; color:#333333; margin:20px 0 20px 0; clear:both;}
+h2.author {background:url(images/author_icon.jpg) left no-repeat; padding-left:24px;}
+.authimg {float:left; margin:0 20px 0 0; border:0px;}
+.ads li {list-style:none; display:inline; margin-right:5px;}
+.ads li img {border:1px solid #999999;}
+.adhere a {font-size:11px;}
+.left {float:left; padding-right: 15px;}
+
+.sidebar1, .sidebar2 {float:left; width:198px; margin-bottom:20px;}
+.sidebar1 h2, .sidebar2 h2 {background:url(images/categories.jpg) left no-repeat; padding-left:24px;}
+.sidebar1 ul li ul li {padding:5px 0 5px 10px; font-size:12px; background:url(images/bullet.gif) left center no-repeat;}
+.sidebar2 ul li ul li {padding:5px 0 5px 10px; font-size:12px; background:url(images/bullet.gif) left center no-repeat;}
+
+/**************** Comments *********************/
+.alt{margin:0;padding:10px;}
+.commentlist{padding:0;}
+.commentlist li{background-color:#EEEFE0;border:1px solid #dbdbdb;list-style:none;margin:15px 0 10px;padding:5px 5px 0 5px;}
+.commentlist li ul li{margin-left:10px;margin-right:-5px;}
+.commentlist p{color:#666666;font-size:12px;margin:10px 5px 10px 0;}
+.children{padding:0;}
+#commentform p{margin:5px 0;}
+.nocomments{margin:0;padding:0;text-align:center;}
+h2#comments{clear:both;color:#333333;font-size:15px;margin:0px 0 20px 0;}
+h2#respond{clear:both;color:#333333;font-size:15px;margin:20px 0 20px 0;}
+.commentmetadata{background-color:#fff;color:#333;font-size:13px;margin:0;padding:3px 5px 3px 5px;}
+.commentmetadata a{color:#333;font-weight:bold;}
+#author, #email, #url{background:#EEEFE0;border:1px solid #dbdbdb;color:#666666;font:12px Arial;margin-right:5px;padding:3px;width:12em;}
+#comment{background:#EEEFE0;border:1px solid #dbdbdb;color:#666666;font:12px Arial;padding:3px;width:99%;}
+.submit, .result-searchbutton{font:1em Arial;margin-bottom:15px;margin-top:5px;padding:2px;}
+/**************** Footer *********************/
+#footer { clear:both;height:104px; background:url(images/footer.jpg) repeat-x;}
+.push {height:104px;}
+.footer_text {font-size:12px; color:#fff; width:930px; margin:auto; padding:20px 8px 10px 8px;}
+.footer_text a:hover {color:#fff;}
+
+/**************** Sidebar tabs *********************/
+.tabberlive h2, .tabbertab h2 { font-size:11px;}
+.tabberlive .tabbertabhide {
+ display:none;
+}
+
+/*--------------------------------------------------
+  .tabber = before the tabber interface is set up
+  .tabberlive = after the tabber interface is set up
+  --------------------------------------------------*/
+.tabber {
+}
+.tabberlive {
+ margin-top:1em;
+}
+
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+ul.tabbernav
+{
+ margin:0;
+ padding: 3px 0;
+ border-bottom: 1px solid #778;
+ font: bold 12px Verdana, sans-serif;
+}
+
+ul.tabbernav li
+{
+ list-style: none;
+ margin: 0;
+ display: inline;
+}
+
+ul.tabbernav li a
+{
+ padding: 3px 0.5em;
+ margin-left: 3px;
+ border: 1px solid #778;
+ border-bottom: none;
+ background: #ccc;
+ text-decoration: none;
+}
+
+ul.tabbernav li a:link { color: #333; }
+ul.tabbernav li a:visited { color: #333; }
+
+ul.tabbernav li a:hover
+{
+ background: #fff;
+}
+
+ul.tabbernav li.tabberactive a
+{
+ background-color: #f0f0f0;
+ border-bottom: 1px solid #f0f0f0;
+}
+
+/*--------------------------------------------------
+  .tabbertab = the tab content
+  Add style only after the tabber interface is set up (.tabberlive)
+  --------------------------------------------------*/
+.tabberlive .tabbertab {
+ padding:5px;
+ border:1px solid #778;
+ border-top:0;
+ background-color:#f0f0f0;
+
+ /* If you don't want the tab size changing whenever a tab is changed
+    you can set a fixed height */
+
+ /* height:200px; */
+
+ /* If you set a fix height set overflow to auto and you will get a
+    scrollbar when necessary */
+
+ /* overflow:auto; */
+}
+
+/* If desired, hide the heading since a heading is provided by the tab */
+.tabberlive .tabbertab h2 {
+ display:none;
+}
+.tabberlive .tabbertab h3 {
+ display:none;
+}
+
+.tabbertab ul { padding:0; margin:0;}
+.tabbertab ul li {padding:5px;}
+.tabbertab ul li a { display:inline;}
+.tabbertab ul li a:hover {}
+.tabbertab ul br {content:"";display:none;} /* This is a bad hack, necessary because the WZUP extension throws in a <br> after each item (which is bad too :p) */
+/*-------PivotX Essentials Overrides--*/
+
+.pivotx-message{margin-left:10px;}
+form.pivotx-search-result{display:none}
+#search-results{margin-top:10px;list-style-position:inside;}
+.pivotx-search-result h2{margin-bottom:10px;}
+
+/*-------Miscellaneous------*/
+.alignleft{float:left;}
+.alignright{float:right;}
+.clear{clear:both;}
+.bold{font-weight:bold;}
+pre {
+white-space:pre-wrap;margin-bottom:15px;}

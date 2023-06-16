@@ -1,0 +1,420 @@
+/* Theme Name: We Are Silver 
+Theme URI: http://residualeve.com/?w=we-are-silver
+Description: PivotX fluid 2-column theme.
+Version: 2.0
+Date:   May 2012
+Author: Residual Eve
+Author URI: http://residualeve.com/
+License: SimPL, http://www.opensource.org/licenses/simpl-2.0.html
+Required PivotX version: PivotX 2.1
+Used Extensions: Star Rating, and gbcf-v3 contact form by Mike Cherim @ http://green-beast.com
+/*
+
+/* BASIC STRUCTURE
+====================================================== */
+body {
+	background: #666 url(images/) repeat-x fixed;
+	color: #000;
+	font: 1em Verdana, Arial, Helvetica, sans-serif;
+	margin: 1.7em 3em;
+}
+#outerFrame {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	background: #FFF;
+	border: 6px solid #FFF;
+}
+/* For bluer header image, use background colour A6BDCB and image spidermist.jpg instead */
+#header {
+	background: #AFB9C2 url(images/spidermist2.jpg) top right no-repeat;
+	height: 180px;
+	color: #FFF;
+}
+#content {
+	margin-left: 270px;
+	width: auto;        
+	color: #000;
+	padding: 20px;
+	text-align: justify;
+	overflow: hidden;
+  }
+#innerContent {
+	overflow: visible;
+	height: 100%;	/* fix the Win32 IE float bug */
+        margin-right: 2em;
+}
+#sidebar {
+	width: 220px;
+	float: left;
+	background: #F0F0F0;
+	color: #000;
+	padding: 0;
+	list-style-type: none;
+	border-top: 1px solid #FFF;
+  }
+#footer {
+	clear: both;
+	width: 100%;
+	height: 30px;
+	background: #A0A0A0;
+	color: #FFF;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	}
+
+/* HEADER
+====================================================== */
+#header h1,
+#header h1 a {
+	font: italic 1.5em georgia, times, serif;
+	padding: 40px 0 0 18px;
+	margin: 0;
+	color: #FFF;
+	text-decoration: none;
+	letter-spacing: 0.02em;
+	}	
+#header h1 a:hover {
+	color: #778;
+	text-decoration: none;
+	}	
+#header p.weblogsubtitle {
+	font: 1.2em georgia, times, serif;
+	font-style: italic;
+	letter-spacing: 0.08em;
+	padding: 0 0 0 38px;
+	margin: 0;
+	color: #FFF;
+	}
+
+/* NAVIGATION/MENU
+====================================================== */
+#nav {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 25px;
+	background: #797979;
+	font: 0.9em verdana, arial, tahoma, sans-serif;
+	list-style: none;
+	line-height: 1;
+	border: 1px solid #FFF;
+	border-width: 1px 0;
+}
+#nav a {
+	display: block;
+	line-height: 14pt;
+	padding: 4px 12px 2px 12px;
+	color: #FFF;
+	text-decoration: none;
+}
+#nav a:hover {
+	background-color: #FFF;
+	color: #797979;
+}
+#nav ul {
+	margin-left: 220px; /* same as sidebar width */
+}
+#nav li {
+	float: left;
+	list-style-type: none; /* removes bullets in earlier firefox browsers */
+}
+
+/* MAIN CONTENT
+====================================================== */
+#content h2 {
+	font: 1.2em verdana, arial, tahoma, sans-serif;
+	color: #4B4B4B;
+	letter-spacing: -1px;
+	text-align: left;
+	font-weight: normal;
+	margin-bottom: 8px;
+}  
+#content h3 {
+	font: 1em verdana, arial, tahoma, sans-serif;
+	letter-spacing: -0.8px;
+	text-align: left;
+	font-weight: normal;
+	margin-bottom: 8px;
+	color: #4B4B4B;
+}  
+h4 {
+	margin: -5px 0 10px 0;
+	padding: 0;
+	font-weight: normal;
+	font-size: 10px;
+	color: #424040;
+}
+a:link, a:visited {
+	color: #676767;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #000;
+	text-decoration: underline;
+}
+code {
+	font: 0.8em 'courier new', courier;
+	background-color: #F7F7F7;
+	padding: 4px;
+	color: #797979;
+	overflow: hidden;
+}	
+blockquote {
+	color: #000; 
+	margin: 17px 30px 2px 30px; 
+	border-left: 1px dotted #989898;
+	background: #fff;
+	padding: 0 10px 0 10px;
+	font: 0.9em verdana, arial, helvetica, sans-serif;
+}
+ul,
+ol {
+	padding: 0;
+	margin: 0 3em;
+	line-height: 1.6em;
+}
+ul {
+	list-style: circle;
+}
+.date,
+.entryfooter,
+.readmore {
+	font: 0.7em verdana, arial, helvetica, sans-serif;
+}
+.readmore {
+	padding-bottom: 1em;
+	text-align: right;
+}
+p.entrynavigation {
+	background: #EEE;
+	padding-bottom: 5px;
+	border-bottom: 1px dashed #989898;
+}
+
+/* DIGG-STYLE PAGE NAVIGATION
+====================================================== */
+#pages {
+	font-size: 0.8em;
+}
+
+/* ENTRYFOOTER and LINKDUMPFOOTER
+====================================================== */
+.entryfooter,
+.linkdumpcomments {
+	display: block;   /* makes linkdumpfooter span across bottom of linkdump entry */
+	background: #F5F5F5;
+	color: #676767;
+	padding: 0.2em 0;
+	font: 0.7em verdana, arial, tahoma, sans-serif;
+	border: 1px dotted #989898;
+	border-width: 1px 0 1px 0;
+}
+.tags {
+	display: inline;  /* Keeps tags in line with rest of footer text */
+}
+
+/* LINKDUMP STYLES
+====================================================== */
+#linkdump2 .entry,
+#linkdump2 .linkdumpentry {
+	margin: 1em 2em;
+        padding: 1.7em;
+        border: 1px dashed #777;
+        background: #F0F0F0;
+}
+#linkdump2 .entry p,
+#linkdump2 .linkdumpentry p {
+        font: 0.9em verdana, arial, tahoma, sans-serif;
+}
+#linkdump2 img.pivotx-image {
+        border-width: 1px 0 0 1px;
+}
+#linkdump2 a:link,
+#linkdump2 a:visited {
+	color: #676767;
+	text-decoration: none;
+}
+#linkdump2 a:hover,
+#linkdump2 a:active {
+	color: #000;
+	text-decoration: underline;
+}
+
+/*
+#linkdump2 img { height: 12em; } 
+how to keep image in linkdump box? */
+
+/* IMAGE STYLES
+====================================================== */
+img {
+	padding: 0;
+	border: none;
+}
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 8px;
+}
+img.right {
+	float: right;
+	background: #FFF;
+	margin: 10px;
+	padding: 0 0 12px 12px;
+}
+img.left {
+	float: left;
+	padding: 0 12px 12px 0;
+}
+
+/* SIDEBAR
+====================================================== */
+#sidebar {
+	background: #FFF;
+	border-right: 1px solid #E3E3E3;
+}
+#sidebar h3 {
+	font: 0.7em arial, tahoma, verdana, sans-serif;
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 0.5em;
+	margin: 0;
+	text-transform: uppercase;
+	border-bottom: 1px solid #FFF;
+	color: #FFF;
+	background: #A0A0A0;
+}
+#sidebar a {
+	color: #676767;
+	text-decoration: none;
+	padding: 0;
+}
+#sidebar a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+#sidebar a.here {
+	 color: #222;
+}
+#sidebar ul { 
+	background: #FFF;
+	list-style-type: none;
+	margin: 0; 
+	font-size:0.8em;
+	padding: 0.9em;
+}
+#sidebar li { 
+	margin: 0;
+	line-height: 1.4em; 
+}  
+#sidebar li a{ 
+	margin: 0;
+	padding: 0;
+}
+#sidebar ul li ul { 
+	margin: 0 1.5em 0 1.5em;
+	padding: 0;
+	list-style-type: square;
+	list-style-position: inside;
+	color: #797979; 
+  } 
+#sidebar p,
+#sidebar p.comms {
+	background: #FFF;
+	font: 0.7em verdana, arial, tahoma, sans-serif;
+	margin: 0;
+	padding: 1.2em;
+	color: #797979;
+}
+#archivemenu {
+	margin: 0.5em; width: 10em;
+}
+/* SIDEBAR WIDGETS
+====================================================== */
+.widget {
+	padding: 0.5em;
+}
+
+/* SEARCH (PIVOTX_ESSNTIALS CHANGED)
+====================================================== */
+form.pivot-search {
+	text-align: center;
+}
+form.pivot-search fieldset {
+	background: #FFF;
+}
+form.pivot-search legend,
+form.pivot-search label {
+	display: none;
+}
+#search.searchbox {
+	margin-bottom: 7px;
+}
+div.pivot-search-result {
+	padding-left: 250px;
+}
+.searchbutton { 
+	margin-bottom: 7px;  /* keeps button in line with search box in IE7 */
+	background: #DDD;
+	text-transform: uppercase;
+}
+
+/* COMMENTS (PIVOT_ESSNTIALS CHANGED)
+====================================================== */
+.commentblock { padding-top: 0; }
+.comments {
+	margin-top: 22px;
+	margin-bottom: 0;
+	color: #333;
+		font-variant: small-caps;
+}
+p.comments { border-bottom: 1px dashed #333; }
+#commentform fieldset { border: none; }
+#commentform input, 
+#commentform textarea {
+	font: 8pt Verdana, Arial, Sans-Serif;
+	border: 1px solid #818181;
+	background-color: #FFF;
+	padding: 4px;
+}
+#commentform input.text-input {
+	 margin-left: 3.5em;
+}
+#form p { line-height: 1.5em; }
+.commentinput { padding-left: 6em; }
+div.privacy-options {
+	 margin-top: 1.3em;
+	 line-height: 1.6em;
+}
+#spamquiz label {
+	line-height: 2em;
+	width: 100%;
+}
+
+/* FOOTER
+====================================================== */
+#footer .left {
+	float:left;
+}
+#footer .right {
+	float:right;
+}
+#footer p {
+	padding: 0.5em 0.7em 0.3em 0.7em;
+	margin: 0;
+	font-size: 0.7em;
+}
+#footer a {
+	color: #E5E5E5;
+	text-decoration: none;
+	border:none;
+}
+#footer a:hover {
+	color: #f5f5f5;
+	text-decoration: underline;
+	border:none;
+}	
+
+

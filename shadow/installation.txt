@@ -1,0 +1,7 @@
+Theme Shadow
+
+This theme has a slider on top of each page. This slider will show selected entries. The entries shown, belong 
+to the subweblog "slider". In the admin panel go to Administration -> Weblogs -> Shadow -> Subweblogs. Here 
+you must allocate one or more categories to the subweglog called slider. If you want to limit the number of 
+entries shown in the slider, enter a number in the field "Number of entries". If you do not enter a number,
+all entries of the allocated categories will be shown in the slider.

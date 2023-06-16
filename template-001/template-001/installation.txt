@@ -1,0 +1,14 @@
+Installation
+
+This template uses the extension Nivoslider by John Schop, so please download this from pivotx.net and
+and activate it in your installation.
+
+The archive contains two folders
+
+template_001 contains the theme. This folder must be placed in your template folder.
+template_001_slides contains the images for the slideshow. This folder must be placed in your Images folder.
+
+If you want to place your slides at another location, you must edit the file _sub_nivoslider.tpl accordingly.
+
+The template uses cufon-yui.js by Simo Kinnunen to convert the fonts used in the headlines.
+

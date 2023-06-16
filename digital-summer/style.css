@@ -1,0 +1,361 @@
+/* 
+Theme Name: Digital Summer
+Theme URI: www.peterboorsma.nl
+Description: Clean 'n mean PivotX theme
+Version: 1.0
+Date:	03 12 2009
+Author: Peter Boorsma
+Author URI: www.peterboorsma.nl
+License: GPL 2.0 http://www.gnu.org/licenses/old-licenses/gpl-2.0.html 
+Required PivotX version: PivotX 2.0 RC
+Used Extensions: Lifestream Widget
+*/ 
+
+/* 
+Used colors:
+orange: #E97F25 (mouse overs)
+green: #5B8F00 (links)
+lighter green: #97EE03 (footer)
+black: #000000	(text color)
+The width of your entries is 405px
+*/
+
+/* some reset stuff */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, li, img, table, tr, th, td, form, fieldset, legend, div, object {
+	margin:0;
+	padding:0;
+	background-color: transparent;
+	border:0;
+	list-style: none;
+	font:normal 100% Helvetica, Arial, Verdana, sans-serif;
+	text-align:left;
+	vertical-align:top;
+}
+
+input, select, textarea, button {
+	font:normal 100% Helvetica, Arial, Verdana, sans-serif;
+}
+
+table, td, th {
+	border-collapse:collapse;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-bottom: 10px;
+}
+
+.clearfix:after { 
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility:hidden; 
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+/* end reset */
+
+body {
+	background: #fff url(images/bg.png) 50% 50% repeat;
+}
+
+a {
+	text-decoration: none;
+	color: #5B8F00;
+}
+
+a:hover {
+	color: #E97F25;
+}
+
+code, pre {
+	font-size: 11px;
+}
+
+dl, blockquote, cite {
+	font-size: 12px;
+}
+
+blockquote {
+	padding: 5px 10px;
+	line-height: 140%;
+	font-style: italic;
+}
+
+/* General styles */
+
+h1 {
+
+}
+
+h2 {
+	font-size: 1.3em;
+	background: #fff url(images/bg.png) repeat;
+	padding: 3px 6px;
+	line-height: 140%;
+}
+
+h2 a {
+	color: #000;
+}
+
+h3 {
+	font-size: 1.1em;
+	line-height: 140%;
+}
+
+
+p, li {
+	font-size: .75em;
+	line-height: 140%;
+}
+
+/* entries */
+
+.entry {
+	padding: 30px 0 0 48px;
+}
+
+.entry h3 {
+	padding: 6px 0 4px 0;
+}
+
+.meta {
+	clear: both;
+	padding: 10px 0 0 0;
+	font-size: .65em;
+}
+
+.meta-comment {
+	padding: 0 0 4px 0;
+	font-size: .65em;
+}
+
+span.meta-info {
+	float: left;
+}
+
+span.commentlink {
+	float: right;
+}
+
+.meta-footer {
+	clear: both;
+	height: 18px;
+	background: url(images/bg-entry.png) bottom left no-repeat;
+}
+
+.comment-footer {
+	height: 13px;
+	background: url(images/bg-comment.png) bottom left no-repeat;
+}
+
+/* sidebar */
+
+#searchbar {
+	margin: 30px 0 0 30px;
+}
+
+table#searchbar {
+	width: 238px;
+	height: 25px;
+}
+
+#searchbar td_searchbutton {
+	width: 27px;
+}
+
+#searchbar td_searchbox {
+	width: 211px;
+}
+
+.sidebar-block {
+	margin: 30px 0 0 30px;
+	padding: 0 0 20px 0;
+	background: url(images/bg-sidebar-divider.png) bottom left repeat-x;
+}
+
+.sidebar-block h3 {
+	color: #5B8F00;
+}
+
+.tabs {
+	margin: 30px 0 0 30px;
+	background: #fff url(images/bg.png) repeat;
+}
+
+#tab-archives { 
+	display: none;
+}
+
+#tab-archives ul { 
+	padding: 20px 0 20px 20px;
+}
+
+
+#tagcloud {
+	padding: 20px 10px 20px 20px;
+}
+
+.tags a,
+#tab-archives li a,
+#tagcloud a,
+a[rel="tag"] {
+	color: #000;
+}
+
+.tags a:hover,
+#tab-archives li a:hover,
+#tagcloud a:hover,
+a:hover[rel="tag"] {
+	color: #E97F25;
+}
+
+/* lay out */
+
+#wrapper {
+	margin: 0 auto;
+	width: 771px;
+	background: url(images/bg-wrapper.png) 50% 50% repeat-y;
+}
+
+#header {
+	position: relative;
+	background: url(images/bg-header.jpg) no-repeat;
+	margin: 0 13px;
+	height: 280px;
+}
+
+h1.sitename {
+	text-align: center;
+	font-size: 3em;
+	padding: 90px 0 0 0;
+}
+
+h2.sitename {
+	text-align: center;
+	font-size: 1.5em;
+	background: none;
+}
+
+h1.sitename a,
+h2.sitename  {
+	color: #E97F25;
+}
+
+h1.sitename a:hover {
+	color: #fff;
+}
+
+#navbar ul {
+	position: absolute;
+	top: 245px;
+	right: 10px;
+	width: 100%;
+}
+
+#navbar li  {
+	display: block;
+	float: right;
+	font-size: 1.15em;
+	margin-right: 10px;
+	padding: 6px 15px 4px 15px;
+	text-align: center;
+	background: #fff;
+}
+
+#navbar li.rss {
+	padding-left: 32px;
+	background: #fff url(images/icon-rss.png) top left no-repeat;
+}
+
+#navbar li a {
+	color: #2FCBFE;
+}
+
+#navbar li a:hover {
+	color: #E97F25;
+}
+
+#main {
+	float: left;
+	width: 453px;
+}
+
+#sidebar {
+	float: left;
+	width: 268px;
+	padding: 0 0 30px 0;
+}
+
+#footer {
+	clear: both;
+	height: 94px;
+	margin: 0 13px;
+	background: #97EE03 url(images/bg-footer.png) repeat;
+	/* background: #fff url(images/bg-footer-grass.jpg) bottom center repeat-x; */
+
+}
+
+/* other */
+
+.pagenav {
+	padding: 30px 0 0 48px;
+	text-align: center;
+}
+
+#footer p {
+	padding: 40px 30px 30px 30px;
+	color: #fff;
+	font-size: .65em;
+}
+
+#footer p a {
+	color: #fff;
+}
+
+#footer p a:hover {
+	color: #E97F25;
+}
+
+/* pivot_essentials.css overrides */
+
+.searchbox,
+.result-searchbox,
+.commentinput {
+	padding: 6px;
+	width: 188px;
+	background: #fff;
+	border: 1px solid #5B8F00;
+}
+
+.searchbutton,
+.result-searchbutton {
+	width: 29px;
+	height: 29px;
+	padding: 0;
+	margin: 0;
+	color: transparent;
+	border: none;
+	background: url(images/button-search.gif) center left no-repeat;
+	cursor: pointer;
+}
+
+.commentbutton {
+	padding: 0 4px;
+	background: #FFFFFF url(images/bg.png);
+	border: 1px solid #5B8F00;
+}
+
+/* let's make the commentform a bit smaller... */
+.markItUp {
+	margin:5px 0;
+	width:405px!important;
+}
+
+#piv_comment {
+	width: 393px!important;
+}

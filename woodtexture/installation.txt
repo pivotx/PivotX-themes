@@ -1,0 +1,13 @@
+Installation
+
+This template uses jQuery Roundabout by Fred LeBlanc to create a 3D rotating image gallery on the front page.
+
+The archive contains two folders
+
+woodtexture contains the theme. This folder must be placed in your template folder.
+woodtexture-slides contains the images for the slideshow. This folder must be placed in your Images folder.
+
+If you want to the images or place them in another location, you must edit the file _sub_gallery.tpl accordingly.
+
+The template uses cufon-yui.js by Simo Kinnunen to convert the fonts used in the headlines.
+

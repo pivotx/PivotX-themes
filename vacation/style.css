@@ -1,0 +1,337 @@
+/*
+Design by Metamorphosis Design
+http://www.metamorphozis.com
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+*
+{
+border: 0;
+margin: 0;
+}
+
+img
+{
+border: 0px;
+}
+
+body{
+ font: 12px Arial, Helvetica, sans-serif;
+ color: #000000;
+ background: url(images/bg.jpg) top center no-repeat #090001;
+}
+
+#main {
+ width: 1014px;
+ margin-left: 0px;
+ padding: 0px 0px 0px 0px;
+}
+
+#main_bg {
+width: 1014px;
+background: url(images/main_bg.gif) repeat-y;
+margin: 0px auto;
+padding: 0px 13px 0px 13px;
+}
+
+
+#header { 
+width:1014px;
+padding: 0px 0px 0px 0px;
+background: url(images/header.jpg) left top no-repeat;
+height: 316px;
+}
+
+#logo { font-family: Arial, Helvetica, sans-serif;
+  color:#1F0601;
+  font-size:18px;
+  font-style:italic;
+  padding: 80px 0px 0px 397px;
+  background: url(images/big_img.jpg) left top no-repeat;
+}
+
+#logo a {
+ text-decoration: none;
+ text-transform: lowercase;
+ font-style: italic;
+ font-size: 18px;
+ color: #1F0601;
+}
+
+
+#logo H1 a{
+ font-size: 24px;
+ font-family: Arial, Helvetica, sans-serif;
+ text-transform: none;
+ font-weight:120;
+}
+
+#logo H2{
+ font-size: 12px;
+ font-family: Arial, Helvetica, sans-serif;
+ text-transform: none;
+ font-weight:100;
+}
+
+#buttons{
+ width: 983px;
+ background: url(images/but.png) center top no-repeat;
+ text-align:center;
+ padding-left:0px;
+ height: 71px;
+}
+
+#buttons a {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 18px;
+ display: block;
+ float: left;
+ height: 45px;
+ text-decoration: none;
+ color: #FFFFFF;
+ padding-top: 25px;
+ padding-left: 0px;
+ text-align: center;
+ background: url(images/but.gif) 30px 20px no-repeat;
+}
+
+#buttons ul {
+ padding-left: 0px;
+ margin: 0px;
+ list-style:none;
+ display: inline;
+}
+
+#buttons li {
+ display: inline;
+ list-style: none;
+ padding-left:0px;
+}
+
+#buttons a {
+ float: left;
+ width: 125px;
+ text-align: center;
+ text-decoration: none;
+ padding-top: 20px;
+}
+
+#buttons a:hover{
+ color: #000;
+}
+
+#content_top { background:url(images/cont_top.png) left top no-repeat;
+height: 10px;
+width: 983px;}
+
+#content{
+ width: 983px;
+ background: url(images/cont.png) left repeat-y;
+ line-height: 20px;
+}
+#content_bot { background:url(images/cont_bot.png) left bottom no-repeat;
+    height: 10px;
+    width: 983px;}
+#bot_left { background: url(images/bot_r.png) left bottom no-repeat;
+    height: 12px;
+    width: 983px;}
+
+#left{
+ width: 274px;
+ margin: 0px 0px 0px 10px;
+ float: left;
+ color:#000000;
+ background:url(images/left_top.gif) left top no-repeat;
+} 
+
+#left ul {
+padding: 0px 0px 0px 0px;
+list-style:none;}
+
+#left li { line-height: 24px;
+ background:url(images/fish1.gif) 9px 9px no-repeat;
+ padding: 0px 0px 0px 30px;}
+#left li a { 
+ font-family:Arial, Helvetica, sans-serif;
+ font-weight: bold;
+ color: #FFFFFF;
+ font-size: 12px;
+ text-decoration: none;}
+ 
+#left li a:hover { 
+ font-family:Arial, Helvetica, sans-serif;
+ font-weight: bold;
+ color: #FFFFFF;
+ font-size: 12px;
+ text-decoration: underline;}
+ 
+
+.left_b { background: url(images/fish2.gif)  8px 20px no-repeat;
+  padding: 15px 5px 0px 30px;
+
+}
+
+.text{
+ padding: 10px 0px 0px 0px;
+}
+
+.img { float:left;
+  margin: 4px 16px 3px 0px;
+}
+
+.img2 { float:left;
+  margin: 4px 12px 3px 0px;
+}
+
+#left span { color:#FFFFFF;
+  font-weight:bold;
+}
+
+#right span { 
+ color:#FFFFFF;
+
+}
+
+#left H1 {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size:18px;
+ font-weight: 100;
+ color: #FFFFFF;
+ text-align: center;
+ padding: 8px 0px 0px 0px;
+ height: 28px;
+ background:url(images/tit_l.jpg) left top no-repeat;
+ margin-bottom: 10px;
+}
+
+#right H2 a{
+ font-family: Arial, Helvetica, sans-serif;
+ font-size:18px;
+ font-weight: 100;
+ color: #FFFFFF;
+ padding-left: 0px;
+ text-align: left;
+ padding: 8px 0px 0px 1px;
+ height: 28px;
+ text-decoration:none;
+  clear:both;
+}
+
+.read{
+ text-align:left;
+ padding-left:10px;
+ padding-top: 2px;
+ text-decoration:none;
+}
+
+.read img {
+ padding:5px;
+  border:1px solid #555;
+ background:#DF8B31;
+}
+
+.read p {
+   margin-bottom:10px;
+}
+
+#left .read a {
+ color: #890101;
+ text-decoration: underline;
+}
+
+#left .read a:hover {
+ color: #890101;
+ text-decoration: none;
+}
+
+.read2{
+ text-align:center;
+ padding-bottom: 15px;
+}
+
+#right .read a {
+ color: #946029;
+ text-decoration: underline;
+}
+
+#right .read a:hover {
+ color: #f6bd81;
+ text-decoration: none;
+}
+
+#right{
+float: right;
+width: 660px;
+margin-right: 8px;
+padding: 5px 0px 0px 0px;
+}
+
+.tit_bot { background: url(images/tit_bot.png) left top no-repeat;
+padding: 5px 5px 0px 5px;}
+
+.date {
+color:white;
+}
+
+.date a {
+color:#f6bd81;
+text-decoration:none;
+}
+
+.meta {
+color:white;
+}
+
+.meta a {
+color:#f6bd81;
+text-decoration:none;
+}
+
+.readmore {
+ font-size:10px;
+ text-decoration: none;
+ font-weight:100;
+ display:block;
+ width: 68px;
+ text-align: left;
+ float: right;
+ line-height: 14px;
+ padding: 0px 0px 0px 7px;
+ margin-top: 4px;
+ height: 15px;
+ background: url(images/read.gif) left top no-repeat;
+}
+
+.readmore a {
+ color: #ffffff;
+ text-decoration: none;
+}
+
+.entryfooter{
+ clear:both;
+}
+
+#footer{
+ height: 57px;
+ width: 100%;
+ font-size: 12px;
+ color: #FFFFFF;
+ text-align: center;
+ clear:both;
+ padding: 23px 0px 0px 0px;
+ background: url(images/footer.jpg) left bottom  no-repeat;
+}
+
+#footer a{
+ color: #FFFFFF;
+ font-size: 12px;
+ text-decoration: none;
+}
+
+#footer a:hover{
+ color: #FFFFFF;
+ font-size: 12px;
+ text-decoration: underline;
+}
+
+

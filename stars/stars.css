@@ -1,0 +1,338 @@
+/* 
+Theme Name: Stars
+Theme URI: www.rabbeltje.nl/?p=stars
+Description: black&white galaxy theme
+Version: 1.1
+Date:   2009-03-23
+Author: Hanneke/Rabbeltje
+Author URI: www.rabbeltje.nl
+License: GPL 2.0 http://www.gnu.org/licenses/old-licenses/gpl-2.0.html 
+Required PivotX version: PivotX 2.0
+Used Extensions: fancybox
+*/
+
+body {
+	font-size: 12px;
+	font-family: Verdana, Arial, sans-serif;
+	line-height: 1.4em;
+	margin: 0;
+	padding: 0;
+	background: #000000 url(images/body-bg.jpg) right center no-repeat fixed;
+	color: #ffffff;
+	}
+
+a {
+	color: #aaaaaa;
+	text-decoration: underline;
+	}
+
+a:visited {
+	color: #666666;
+	text-decoration: none;
+	}
+
+a:hover {
+	color: #ffffff;
+	text-decoration: none;
+	}
+
+a.pagelink {
+	color: #bbbbbb;
+	text-decoration: none;
+	}
+
+a.pagelink:hover {
+	color: #ffffff;
+	text-decoration: none;
+	background: none;
+	font-weight: bold;
+	}
+
+#pagetabs td.activepage a.pagelink {
+	color: #ffffff;
+	text-decoration: none;
+	background: url(images/stars5.jpg) center center;
+	font-weight: bold;
+	}
+
+a.title {
+	color: #ffffff;
+	text-decoration: none;
+	}
+
+a.title:hover {
+	color: #cccccc;
+	text-decoration: none;
+	background: none;
+	}
+
+#wrapper {
+	width: 800px;
+	margin: 20px auto;
+	}
+
+/* header */
+
+#header {
+	color: #fff;
+	text-align: right;
+	height: 80px;
+	padding: 10px;
+	}
+
+#header h1 a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 35px;
+	}
+
+#header h1 a:hover {
+	color: #bbbbbb;
+	}
+
+#header h2 {
+	font-size: 15px;
+	color: #cccccc;
+	}
+
+/* pagetabs */
+
+table#pagetabs {
+	height: 30px;
+	width: 100%;
+	border-top: #ffffff solid 3px;
+	font-size: 16px;
+	border-collapse: collapse;
+	}
+
+#pagetabs td {
+	padding: 15px;
+	background: #222222;
+	text-align: center;
+	}
+
+#pagetabs td a {
+	text-decoration: none;
+	}
+
+#pagetabs td:hover {
+	text-decoration: none;
+	background: url(images/stars5.jpg) center center;
+	}
+
+#pagetabs td.activepage {
+	color: #ffffff;
+	text-decoration: none;
+	background: url(images/stars5.jpg) center center;
+	font-weight: bold;
+	}
+
+/* main area */
+
+#content {
+	width: 800px;
+	border-top: #ffffff solid 3px;
+	border-bottom: #ffffff solid 3px;
+	background: url(images/stars6.jpg) repeat-y top left;
+	}
+
+#sidebar {
+	float: left;
+	width: 167px;
+	padding: 10px 20px 10px 10px;
+	color: #ffffff;
+	}
+
+#weblog {
+	border-left: #ffffff solid 3px;
+	float: right;
+	width: 600px;
+	}
+
+/* entries */
+
+.entry {
+	color: #ffffff;
+	border-bottom: #ffffff solid 3px;
+	padding: 10px;
+	}
+
+table.entrytitle {
+	height: 60px;
+	}
+
+td.date {
+	color: #ffffff;
+	width: 60px;
+	padding-top: 20px;
+	text-align: center;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	}
+
+td.titlecell {
+	height: 40px;
+	background: url(images/earth.jpg) left center no-repeat;
+	padding-top: 20px;
+	padding-left: 70px;
+	text-align: left;
+	}
+
+.entrytitle a{
+	color: #ffffff;
+	text-decoration: none;
+	}
+
+.entrytitle a:hover {
+	color: #cccccc;
+	text-decoration: none;
+	}
+
+/* entry-footer */
+
+.entryfooter {
+	clear: both;
+	color: #ffffff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	}
+
+.tags {
+	display: inline;
+	margin-top: 5px;
+	border-bottom: 0px solid white;
+	color: #aaaaaa;
+	text-decoration: none;
+	}
+
+.tags a, a[rel=tag] {
+	color: #aaaaaa;
+	text-decoration: underline;
+	border-bottom: 0px solid white;
+	}
+
+.taglinkext, a[rel="tag"] {
+	color: #aaaaaa;
+	text-decoration: underline;
+	border-bottom: 0px solid white;
+	}
+
+.taglinkext a:hover {
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom: 0px solid white;
+	}
+
+/* footer */
+
+#footer {
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 20px;
+	clear: both;
+	border-top: #ffffff solid 3px;
+	}
+
+h1 {
+    font-size: 32px;
+    font-family: Verdana, Arial, sans-serif;
+    color: #eeeeee;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: Verdana, Arial, sans-serif;
+    color: #dddddd;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: Verdana, Arial, sans-serif;
+    color: #cccccc;
+}
+
+
+small { 
+    font-size: 11px;
+    color: #999;
+}
+
+
+blockquote {
+    border: 1px solid #CCC;
+    background-color: #F2F2F2;
+    padding: 10px;
+    font-style: italic;
+    color: #666;
+}
+
+.pivot-image {
+	max-width: 480px;
+	margin: 20px auto;
+	border: 0px solid white;
+	clear: both;
+	}
+
+#pages {
+	clear: both;
+	margin: 20px;
+	padding: 0px;
+	min-height: 24px;
+	}
+
+.comments {
+	border-top:2px solid #ffffff;
+	border-bottom: 2px solid #ffffff; 
+	text-align: center;
+	}
+
+div.comment {
+	background: url(images/stars2.jpg) center center repeat;
+	border-left:2px solid #ffffff;
+	border-top:2px solid #ffffff; 
+	color: #ffffff;
+	margin: 14px 0px 0px 20px;
+	min-height:36px;
+	padding: 14px 14px 7px 14px;
+	}
+
+div.comment cite {
+	color: #cccccc;
+	font-style: normal;
+	font-size: 11px;
+	line-height: 24px;
+	display: block;
+	padding-top: 6px;
+	padding-bottom: 0px;
+	}
+
+.comment small {
+	color: #cccccc;
+	font-size: 11px;
+	}
+
+.commentform, .commentform a:link {
+	font-size: 11px;
+	color: #aaaaaa;
+	}
+
+.commentinput {
+    width: 170px;
+    margin: 0px 0px 3px 0px;
+}
+
+.gallery {
+	 margin: 0;
+	 padding: 0;
+	 }
+
+.gallery img {
+	 margin: 2px;
+	 padding: 0;
+	 } 
+
+
+a.fancybox img {
+	 border: 4px solid #dddddd;
+	 }

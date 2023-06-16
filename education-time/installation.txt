@@ -1,0 +1,14 @@
+Installation.
+
+This ZIP-archive contains two folders.
+
+education-time - must be placed in the template-folder of your PivotX-installation.
+education-time-slides - must be placed in the images-folder of your PivotX-installation.
+
+If you want to change the images, texts or links in the gallery, you must edit the file _sub_gallery.tpl.
+
+SlideDeck 1.2.2 Lite is Copyright (c) 2011 of digital-telepathy (http://www.dtelepathy.com)
+
+jQuery must be installed
+
+2014-01-15 Added by PivotX support: Better version of Slidedeck (1.4.3) added to cope with Firefox problems. 

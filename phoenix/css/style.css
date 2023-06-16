@@ -1,0 +1,749 @@
+/* 
+    -------------------------------------------------------------------------------------
+	| Theme Name:                 Phoenix                                               |
+    | Theme URI:                  http://www.windmillwebwork.com/sandbox/weblog/phoenix |
+    | Description:                A PivotX Theme with a Nivo Slider on the frontpage    |
+    | Version:                    0.3                                                   |
+    | Date:                       April 27th, 2011                                      |
+    | Author:                     John Schop - Windmill Web Work                        |
+    | Author URI:                 http://www.windmillwebwork.com                        |
+    | License:                    ISC (see license.txt)                                                   |
+    | Required PivotX Version:    2.2.5                                                 |
+    | Used Extensions:            Nivo Slider, Extra Image Field (optional)             |
+    -------------------------------------------------------------------------------------
+*/
+
+/* ------------------------
+	1. Reset
+---------------------------*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/*---------------------------------------------------------
+    2. Body and links
+------------------------------------------------------------ */
+body {
+    min-width: 960px;
+    font: 62.5% Helvetica, "Helvetica Neue", Arial, sans-serif;
+    color: #444;
+    line-height: 2.2em;
+    background: #292929 url(../images/body-background.jpg) repeat left top;
+}
+a:link,
+a:visited {
+    color: #285a86;
+    text-decoration: none;
+}
+a:hover {
+    color: #1a3d5c;
+}
+.entry a:link,
+.entry a:visited {
+    font-weight: bold;
+}
+
+/*---------------------------------------------------------
+    3. Basic Structure
+------------------------------------------------------------ */
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+}
+.wrapper.big {
+    background: url(../images/wrap-glow.jpg) no-repeat center top;
+}
+
+#main {
+    background: #e7e9eb url(../images/main-body.png) repeat-y;
+    overflow: hidden;
+    padding: 15px 0 0;
+}
+
+.main-top-left {
+    float: left;
+    width: 638px;
+    padding: 0;
+}
+#content {
+    float: left;
+    width: 593px;
+    padding: 0px 30px 0px 30px;
+
+}
+#sidebar {
+    float: right;
+    padding: 0 20px;
+    width: 262px;
+}
+#footer {
+    clear: both;
+    margin-top: 30px;
+}
+.clear:after,
+li.comment:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*---------------------------------------------------------
+    4. Header
+------------------------------------------------------------ */
+
+#logo {
+    padding: 20px 0 10px;
+}
+
+#logo p.weblogsubtitle {
+	padding-left:10px;
+    color: #ccc;
+    font-size: 1.4em;
+    text-shadow: 0 1px 0 #090909;
+}
+
+#title a {
+    color: #fff;
+}
+#title a:hover {
+    text-decoration: none;
+}
+div.banner {
+    float: right;
+    margin: 20px 0 0 0;
+}
+
+/*---------------------------------------------------------
+    5. Navigation
+------------------------------------------------------------ */
+
+.nav {
+    float: left;
+    line-height: 45px;
+    margin: 0 20px;
+    width: 100%;
+}
+.nav a {
+    display: block;
+    color: #ebecee;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #090909;
+    padding: 0 20px;
+}
+.nav a:hover {
+    color: #fff;
+}
+.nav li {
+    float: left;
+}
+.nav ul {
+    position: absolute;
+    left: -999em;
+    height: auto;
+    width: 200px;
+    z-index: 999;
+    padding-bottom: 10px;
+    font-weight: normal;
+    background: transparent url(../images/nav-bottom.png) no-repeat bottom center;
+}
+.nav ul a, .nav li a {
+    display: block;
+    position: relative;
+}
+.nav ul a {
+    font-weight: normal;
+    color: #ebecee;
+    text-shadow: none;
+}
+
+
+/*Page Navigation
+---------------------------------------*/
+#pg-nav-bg {
+    height: 51px;
+    background: #000 url(../images/flw-bg.png) repeat-x top left;
+}
+#pg-nav {
+    float: right;
+}
+#pg-nav .nav {
+    margin: 0;
+    line-height: 50px;
+}
+#pg-nav .nav a  {
+    font-size: 1.2em;
+    font-weight: normal;
+    color: #b3b3b3;
+    text-shadow: 0 -1px 0 #000;
+}
+#pg-nav .nav a:hover {
+    color: #fff;
+}
+#pg-nav .nav ul {
+    z-index: 1000;
+    background-image: url(../images/nav-bottom-pg.png);
+}
+
+/*---------------------------------------------------------
+    6. Main
+------------------------------------------------------------ */
+#main-top {
+	background: url('../images/main-top.png') no-repeat;
+	height: 15px;
+}
+#main-bottom {
+	background: url('../images/main-bottom.png') no-repeat;
+	height: 15px;
+}
+
+#main .entry {
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #aaa;
+	font-size: 1.3em;
+    overflow: hidden;
+    text-shadow: 0 1px 0 #FBFBFB;
+}
+
+.entry h2.title {
+	font-size: 1.6em;
+	margin: 0;
+	padding: 0 0 6px 0;
+}
+
+.entry h2 a {
+	color: #444;
+	text-shadow: 0 1px 0 white;
+}
+
+.entry h2 a:hover {
+	color: #285A86;
+}
+.entry .entrynavigation {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom:10px;
+    padding-bottom:4px;
+}
+.entry a.pivotx-more-link {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    text-shadow: 0 1px 0 white;
+    background: url(../images/entry-more.png) no-repeat 0 4px;
+    padding-left:15px;
+}
+
+.entry p {
+    margin-bottom: 10px;
+    text-shadow: 0 1px 0 #FBFBFB;
+}
+
+.entry img.extraimage {
+	padding: 4px;
+	background: white;
+	border: 1px solid #AAA;
+	float:left;
+	margin: 0 20px 0 0;
+	position:relative;
+	z-index:1;
+}
+
+.entry .date {
+	text-shadow: 0 1px 0 #FBFBFB;
+	padding-bottom: 3px;
+    margin-bottom: 10px;
+    display: block;
+    font-size: .9em;
+}
+
+.entry ul {
+	list-style: disc inside;
+}
+
+.entry ol {
+	list-style: decimal inside;
+}
+
+.entry ul, .entry ol {
+	margin: 0 0 10px 10px;
+}
+
+.entry blockquote {
+	margin: 0 20px 10px 20px;
+	padding: 15px;
+	background: #f4f6f8;
+	border: 1px solid #AAA;
+	font-style: italic;
+}
+
+.entry pre {
+	margin: 0 20px 10px 20px;
+	padding: 15px;
+	white-space: normal;
+	border: 1px solid #aaa;
+	margin: 10px;
+	padding:10px;
+	background: #f4f6f8;
+}
+
+.entry .excerpt {
+    border-bottom: 1px dotted #c4c6c7;
+    padding-bottom:10px;
+}
+
+.entry .result-item {
+    margin: 0 50px;
+}
+/*----------------
+    entry comments
+------------------*/
+
+
+.entry .comments p{
+    font-size: 1.4em;
+    font-weight: bold;
+    font-style: italic;
+    color: #444;
+    text-shadow: 0 1px 0 white;
+      
+}
+
+.entry .comment {
+    background: #F4F6F8;
+    overflow: hidden;
+}
+.entry .comment .commenter-name {
+    font-weight:bold;
+}
+.entry .comment-date {
+    font-style:italic;
+}
+.entry .comment-meta {
+    border-bottom: 1px dotted #c4c6c7;
+    margin: 0 15px 0px 90px;
+    padding-top: 5px;
+
+}
+.entry .comment-meta p {
+    margin:0;
+}
+.entry .comment-text p {
+    color: #444;
+    text-shadow: 0 1px 0 #FBFBFB;
+}
+img.gravatar {
+    margin: 10px;
+    border: 1px solid #444;
+}
+
+.entry .commentlist {
+    padding-bottom:10px;
+    border-bottom: 1px dotted #c4c6c7;
+}
+
+/*---------------------
+    Comment Form
+-----------------------*/
+
+#respond {
+    margin: 30px 0 0 0;
+}
+
+#respond fieldset {
+    border: none;
+    display: block;
+    margin: 15px 0;
+}
+
+input.text-input, form#commentform textarea {
+    padding: 5px;
+    width: 411px;
+    font-size: 1em;
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+h3#reply-title {
+    margin: 0 0 30px 121px;
+    font-size: 1.6em;
+}
+
+h3#reply-title, form#commentform {
+    text-shadow: 0 1px 0 #FBFBFB;
+}
+
+form#commentform label.comment-field {
+    display: block;
+    float: left;
+    width: 121px;
+    margin: 5px 0 3px 0;
+}
+
+form#commentform fieldset span {
+    margin-left: 10px;
+    color: #900;
+}
+
+form#commentform .commentform-submit {
+    margin-left: 121px;
+    margin-bottom: 10px;
+}
+form#commentform .form-button {
+    padding:5px;
+}
+form .privacy-options, form .small-print {
+    margin-left: 121px;
+    font-size: .8em;
+}
+
+#pivotx-moderate-queue-message {
+    margin-left: 121px;
+}
+
+input#author, input#email, input#url {
+    width: 286px;
+}
+/*----------
+	Paging (this overrides pivotx_essentials.css)
+------------*/
+
+#pages {
+	padding: 10px 0;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-shadow: 0 1px 0 white;
+	margin: 5px 0;
+}
+#pages ul li a {
+    margin: 0 3px;
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    color: #444;
+    text-shadow: 0 1px 0 #fff;
+    background: #eef0f2 url(../images/pager-bg.png) repeat-x bottom left;
+    border: 1px solid #ababab;
+}
+#pages ul li a:hover {
+    background: #f3f5f7 url(../images/pager-bg-hover.png) repeat-x bottom left;
+    border: 1px solid #c9c9c9;
+}
+#pages ul li a:active {
+    border: 1px solid #ccc;
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #dedede;
+    background: #d4d7d9 url(../images/pager-bg-active.png) repeat-x top left;
+}
+.navigation .wp-pagenavi span.pages {
+    margin-right: 20px;
+}
+#pages ul li.current {
+    margin: 0 8px;
+    color: #444;
+	border: 0;
+	padding: 6px 0;
+	background: transparent;
+}
+
+#pages ul li.nolink {
+	padding: 5px 8px;
+}
+
+/*------------
+	Sidebar
+--------------*/
+
+h2.sidebar-title {
+	margin: 20px 0 10px 0;
+	padding-bottom: 3px;
+	font-size: 1.4em;
+	border-bottom: 1px dotted #CCC;
+	color: #555;
+    text-shadow: 0 1px 0 white;
+}
+
+#sidebar ul {
+	font-size: 1.2em;
+}
+
+#sidebar ul li {
+	padding: 1px 0;
+    text-shadow: 0 1px 0 #FBFBFB;
+}
+
+a.badge {
+	margin-right:6px;
+}
+
+#stuff {
+    margin: 0 12px;
+}
+
+#latest-comments li a {
+    color: #444;
+    text-shadow: 0 1px 0 #FBFBFB;
+}
+
+#latest-comments .commenter-name {
+    color: #285a86;
+}
+
+/*------------
+	Footer
+--------------*/
+
+#footer {
+	padding: 30px 0;
+	background: #141414;
+    border-top: 1px solid #373737;
+}
+#footer a {
+    color: #fff;
+}
+#footer a:hover {
+    text-decoration:underline;
+}
+#footer-left.footer-column {
+	width: 337px;
+}
+#footer-middle.footer-column {
+    width:281px;
+}
+#footer-search.footer-column {
+    margin: 0;
+    float: right;
+    width: 266px;
+}
+.footer-column {
+	float:left;
+	margin-right: 30px;
+	color: #666;
+
+}
+
+.footer-column h2 {
+	font-size: 1.6em;
+	border-bottom: 1px dotted #666;
+	color: #666;
+	padding-bottom: 4px;
+}
+
+.footer-column p, .footer-column ul {
+	font-size: 1.2em;
+}
+
+/* ------------
+    Stuff
+---------------*/
+ .warning {
+     color: #fff;
+     background: red;
+     font-size: 1.4em;
+     border: 1px solid white;
+     padding: 10px 20px 20px 20px;
+     margin: 10px 0 20px;
+ }
+ .warning a {
+     color: #fff;
+     text-decoration:underline;
+ }
+
+ .warning p {
+     padding-top:10px;
+ }
+
+ /*--------------
+    Search box
+-----------------*/
+
+.pivotx-search fieldset,  
+.pivotx-search-result fieldset {  
+    border: 0;  
+    padding: 0;  
+    margin: 0;  
+}  
+
+.pivotx-search label,   
+.pivotx-search legend,   
+.pivotx-search-result label,   
+.pivotx-search-result legend {  
+    display: none;  
+    visibility: hidden;  
+}
+
+.pivotx-search input.searchbox {
+margin: 15px 0 0 0;
+padding: 7px 2px;
+width: 180px;
+border: 1px solid #AAA;
+background: #DDD;
+color: #555;
+font-size: 1.2em;
+}
+
+.pivotx-search input.searchbutton {
+    height: 31px;
+    padding-top: 1px;
+    font-size: 1.2em;
+    }
+
+/* The Nivo Slider styles */
+.nivoSlider {
+    position:relative;
+}
+.nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    border:0;
+    padding:0;
+    margin:0;
+    z-index:6;
+    display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+    display:block;
+    position:absolute;
+    z-index:5;
+    height:100%;
+}
+.nivo-box {
+    display:block;
+    position:absolute;
+    z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    background:#000;
+    color:#fff;
+    opacity:0.8; /* Overridden by captionOpacity setting */
+    width:100%;
+    z-index:8;
+}
+.nivo-caption p {
+    padding:5px;
+    margin:0;
+}
+.nivo-caption a {
+    display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+    position:absolute;
+    top:45%;
+    z-index:9;
+    cursor:pointer;
+}
+.nivo-prevNav {
+    left:0px;
+}
+.nivo-nextNav {
+    right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+    position:relative;
+    z-index:9;
+    cursor:pointer;
+}
+.nivo-controlNav a.active {
+    font-weight:bold;
+}
+
+
+/*============================*/
+/*=== Custom Slider Styles ===*/
+/*============================*/
+#slider-wrapper {
+    width:960px;
+    height:430px;
+    margin:0 auto;
+}
+
+#slider {
+    position:relative;
+    width:940px;
+    height:374px;
+    margin-left:9px;
+    background:url(../images/loading.gif) no-repeat 50% 50%;
+    border:1px solid #fff;
+}
+#slider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+#slider a {
+    border:0;
+    display:block;
+}
+
+.nivo-controlNav {
+    position:absolute;
+    left:420px;
+    bottom:-42px;
+}
+
+.nivo-controlNav a {
+    display:block;
+    width:22px;
+    height:22px;
+    background:url(../images/bullets.png) no-repeat;
+    text-indent:-9999px;
+    border:0;
+    margin-right:3px;
+    float:left;
+}
+.nivo-controlNav a.active {
+    background-position:0 -22px;
+}
+
+.nivo-directionNav a {
+    display:block;
+    width:30px;
+    height:30px;
+    background:url(../images/arrows.png) no-repeat;
+    text-indent:-9999px;
+    border:0;
+}
+a.nivo-nextNav {
+    background-position:-30px 0;
+    right:15px;
+}
+a.nivo-prevNav {
+    left:15px;
+}
+
+.nivo-caption {
+    text-shadow:none;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size:1.4em;
+}
+.nivo-caption a { 
+    color:#efe9d1;
+    text-decoration:underline;
+}
